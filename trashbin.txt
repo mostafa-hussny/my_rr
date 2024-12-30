@@ -1,0 +1,5264 @@
+stssjring
+ 
+strssjing
+ 
+strsjsjing
+ 
+ssjstring
+ 
+stsjsjring
+ 
+فارة اليمين
+ 
+   <MenuItem value={0}>كفارة اليمين</MenuItem>
+                  <MenuItem value={1}>كفارة اليمين</MenuItem>
+ 
+ // const columns = [
+ 
+التفاصيل باللغة الانجليزية{" "}
+ 
+ {
+        path: "",
+      },
+ 
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        setSelectedImage(e.target.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+ 
+// Display the chosen photo
+ 
+ const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      // Display the chosen photo
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        setSelectedImage(e.target.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setItemState((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+ 
+strasjajing
+ 
+strisjsng
+ 
+striasng
+ 
+sjjjstring
+ 
+stgbhring
+ 
+stkkkring
+ 
+""
+ 
+selectedImage
+ 
+
+ 
+sksksk
+ 
+{" "}
+ 
+{" "}
+ 
+handleOpen
+ 
+  // const columns = [
+ 
+ settherow,
+ 
+ thedata, sethedata,
+ 
+       thedata={thedata}
+                  sethedata={sethedata}
+ 
+ // axios.get(baseurl + "Type").then((response) => {
+                //   sethedata(response.data);
+                //   console.log("reddsssss", response);
+                // });
+ 
+  console.log(data1);
+  useEffect(() => {
+    sethedata(data1);
+  }, [data1]);
+ 
+sethedata
+ 
+handleOpen
+ 
+     axios.get(baseurl + "Type").then((response) => {
+
+        });
+        console.log(response);
+ 
+   sethedata(response.data);
+          console.log("reddsssss", response);
+ 
+submit
+ 
+dataSend
+ 
+      <Box>
+              <Typography variant="h6">انستجرام</Typography>
+              <TextField
+                label="انستجرام"
+                variant="outlined"
+                margin="normal"
+                fullWidth
+                required
+                style={{ direction: "rtl" }}
+              />
+            </Box>{" "}
+ 
+      <Box>
+              <Typography variant="h6">انستجرام</Typography>
+              <TextField
+                label="انستجرام"
+                variant="outlined"
+                margin="normal"
+                fullWidth
+                required
+                style={{ direction: "rtl" }}
+              />
+            </Box>{" "}
+ 
+   <Box>
+              <Typography variant="h6">لبنكد ان</Typography>
+              <TextField
+                label="لينكد ان"
+                variant="outlined"
+                margin="normal"
+                fullWidth
+                required
+                style={{ direction: "rtl" }}
+              />
+            </Box>{" "}
+            <Box>
+              <Typography variant="h6">تويتر</Typography>
+              <TextField
+                label="تويتر"
+                variant="outlined"
+                margin="normal"
+                fullWidth
+                required
+                style={{ direction: "rtl" }}
+              />
+            </Box>
+ 
+        <Box>
+              <Typography variant="h6" gutterBottom>
+                الوصف
+              </Typography>
+              <TextareaAutosize
+                aria-label="Message"
+                placeholder="اضف وصف"
+                minRows={6}
+                maxRows={6}
+                style={{ width: "100%", marginTop: 8, direction: "rtl" }}
+                required
+              />
+            </Box>
+ 
+strssming
+ 
+strsjsisnsnng
+ 
+stssjsmsring
+ 
+sjsj
+ 
+formData
+ 
+  <Box>
+              <Typography variant="h6" gutterBottom>
+                العنوان باللغة الانجليزية{" "}
+              </Typography>
+              <TextareaAutosize
+                aria-label="Additional Comments"
+                placeholder="المحتوى"
+                minRows={6}
+                maxRows={7}
+                style={{ width: "100%", marginTop: 8, direction: "rtl" }}
+                name="enName"
+                value={itemState.enName}
+                onChange={handleInputChange}
+              />
+            </Box>{" "}
+ 
+{" "}
+ 
+باللغة الانجليزي
+ 
+{itemState.enDescription
+ 
+itemState.description
+ 
+   <Box>
+              <Typography variant="h6">اختر صورة</Typography>
+              <input type="file" onChange={handleImageChange} />
+              {selectedImage && (
+                <Box mt={2}>
+                  <img
+                    src={selectedImage}
+                    alt="Chosen"
+                    style={{ maxWidth: "100%", maxHeight: "200px" }}
+                  />
+                </Box>
+              )}
+            </Box>
+ 
+  image: "sksksk",
+    isDeleted: false,
+    projects: null,
+ 
+includes
+ 
+[]
+ 
+  // const columns = [
+  //   { name: "البريد الاكتروني", selector: "name", sortable: true },
+  //   { name: "البلد", selector: "age", sortable: true },
+  //   { name: "قيمة التبرع", selector: "city", sortable: true },
+  //   { name: "الراعي", selector: "city", sortable: true },
+  //   { name: "البنك", selector: "city", sortable: true },
+  //   { name: "نوع الكارت", selector: "city", sortable: true },
+  //   { name: "نوع العملي", selector: "city", sortable: true },
+  //   { name: "التحقق من نجاح العملية", selector: "city", sortable: true },
+  // ];
+
+  // const data = [
+  //   { name: "John Doe", age: 28, city: "New York" },
+  //   { name: "Jane Smith", age: 35, city: "San Francisco" },
+  //   { name: "Bob Johnson", age: 42, city: "Los Angeles" },
+  // ];
+ 
+ useEffect(() => {
+    setFormData({
+      ...formData,
+      ["image"]: selectedImage,
+    });
+  }, [selectedImage]);
+ 
+formDataObject
+ 
+bankData
+ 
+      <Box>
+              <Typography variant="h6" gutterBottom>
+                التفاصيل باللغة الانجليزية{" "}
+              </Typography>
+              <TextareaAutosize
+                aria-label="Additional Comments"
+                name="enContent"
+                placeholder=" تفاصيل المحتوى باللغة الانجليزية ....."
+                minRows={6}
+                maxRows={7}
+                style={{ width: "100%", marginTop: 8, direction: "rtl" }}
+                value={formData.enContent}
+                onChange={handleChange}
+              />
+            </Box>
+ 
+       <Box>
+              <Typography variant="h6" gutterBottom>
+                المحتوى
+              </Typography>
+              <TextareaAutosize
+                aria-label="Message"
+                name="content"
+                placeholder="تفاصيل المحتوى...."
+                minRows={6}
+                maxRows={6}
+                style={{ width: "100%", marginTop: 8, direction: "rtl" }}
+                required
+                value={formData.content}
+                onChange={handleChange}
+              />
+            </Box>
+ 
+  content: "",
+    enContent: "",
+ 
+null
+ 
+ onClick={() => {
+                handleOpene();
+                setrowId(row.id);
+              }}
+ 
+prepaidAmount
+ 
+يمة المقدم
+ 
+{" "}
+ 
+ <Box>
+              <Typography variant="h6">قيمة المقدم</Typography>
+              <TextField
+                label="قيمة المقدم"
+                variant="outlined"
+                margin="normal"
+                fullWidth
+                required
+                style={{ direction: "rtl" }}
+              />
+            </Box>{" "}
+ 
+ setPortionId(event.target.value);
+ 
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      // Display the chosen photo
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        setSelectedImage(e.target.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+ 
+ const selectedItemId = event.target.value;
+    const selectedItem = project.find((item) => item.id === selectedItemId);
+    setSelectedItem(selectedItem);
+ 
+    <FormControl fullWidth>
+                <InputLabel id="demo-simple-select-label">اختر </InputLabel>
+                <Select
+                  labelId="demo-simple-select-label"
+                  id="demo-simple-select"
+                  value={age}
+                  label="اختر"
+                  style={{ direction: "rtl", height: "50px" }}
+                  onChange={handleChange1}
+                >
+                  {project?.map((item) => {
+                    return <MenuItem value={item.id}>{item.name}</MenuItem>;
+                  })}
+                </Select>
+              </FormControl>
+ 
+null
+ 
+فارة اليمين
+ 
+sahm
+ 
+السهم
+ 
+import { Delete, Edit } from "@mui/icons-material";
+import { Button } from "@mui/material";
+ 
+import Icon from "@mui/material/Icon";
+
+// Material Dashboard 2 React components
+import MDBox from "components/MDBox";
+import MDTypography from "components/MDTypography";
+import MDAvatar from "components/MDAvatar";
+import MDProgress from "components/MDProgress";
+
+// Images
+import LogoAsana from "assets/images/small-logos/logo-asana.svg";
+import logoGithub from "assets/images/small-logos/github.svg";
+import logoAtlassian from "assets/images/small-logos/logo-atlassian.svg";
+import logoSlack from "assets/images/small-logos/logo-slack.svg";
+import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
+import logoInvesion from "assets/images/small-logos/logo-invision.svg";
+import { FaRegEdit } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
+ 
+ headers: {
+          "Content-Type": "multipart/form-data", // <- HERE
+        },
+ 
+console.log("success");
+ 
+console.log("successfully");
+ 
+handledelete(row.id)
+ 
+handledelete(row.id)}
+ 
+handledelete(row.id)} 
+ 
+console.log(res);
+ 
+row
+ 
+=> {}
+ 
+console.log(inputdata)
+ 
+{" "}
+ 
+ask
+ 
+handleDel
+ 
+Search
+ 
+ const [age, setAge] = React.useState("");
+
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
+ 
+  Button,
+  FormControl,
+  InputLabel,
+  MenuItem,
+ 
+  Select,
+  TextField,
+  TextareaAutosize,
+  Typography,
+ 
+// import Mytable1data from "../data/projectsTableData";
+import Footer from "examples/Footer";
+import { FaUser } from "react-icons/fa";
+ 
+ // const columns = [
+  //   { name: "البريد الاكتروني", selector: "name", sortable: true },
+  //   { name: "البلد", selector: "age", sortable: true },
+  //   { name: "قيمة التبرع", selector: "city", sortable: true },
+  //   { name: "الراعي", selector: "city", sortable: true },
+  //   { name: "البنك", selector: "city", sortable: true },
+  //   { name: "نوع الكارت", selector: "city", sortable: true },
+  //   { name: "نوع العملي", selector: "city", sortable: true },
+  //   { name: "التحقق من نجاح العملية", selector: "city", sortable: true },
+  // ];
+
+  // const data = [
+  //   { name: "John Doe", age: 28, city: "New York" },
+  //   { name: "Jane Smith", age: 35, city: "San Francisco" },
+  //   { name: "Bob Johnson", age: 42, city: "Los Angeles" },
+  // ];
+ 
+    axios.delete(`${baseurl}Banks/${id}`).then(()=>{
+    console.log("successfully")
+    }).catch((e)=>{
+
+    })
+  };
+ 
+{itemState.name}
+ 
+name
+ 
+data3.portions || []
+ 
+م${index + 1}`
+ 
+باللغة الانجليزي
+ 
+ const handleChange1 = (event) => {
+    setAge(event.target.value);
+  };
+ 
+"عنوان النشاط"
+ 
+.name
+ 
+itemState.name
+ 
+&&
+ 
+&&
+ 
+&&
+ 
+{cat}
+ 
+ختر قسم
+ 
+{data3?.categoryId}
+ 
+console.log("ddffff", data3);
+ 
+et cat;
+ 
+const data = UseFetch("Category");
+ 
+ختر قسم"
+ 
+ختر قسم
+ 
+// Adjust the property accordingly
+ 
+null
+ 
+null
+ 
+null
+ 
+object
+ 
+[data3]
+ 
+    name: "",
+    enName: "",
+    description: "",
+    enDescription: "",
+    isDeleted: false,
+    image: "strijzjg",
+    customPortionPrice: true,
+    categoryId: null,
+    portions: [
+      {
+        name: "",
+        enName: "",
+        amount: 1,
+        isDeleted: false,
+        needForSpecificName: true,
+        customPortionPrice: true,
+        needForDeliveryAddress: true,
+      },
+    ],
+    typsIDs: [],
+ 
+   name: "",
+    enName: "",
+    description: "",
+    enDescription: "",
+    isDeleted: false,
+    image: "strijzjg",
+    customPortionPrice: true,
+    categoryId: null,
+    portions: [
+      {
+        name: "",
+        enName: "",
+        amount: 1,
+        isDeleted: false,
+        needForSpecificName: true,
+        customPortionPrice: true,
+        needForDeliveryAddress: true,
+      },
+    ],
+    typsIDs: [],
+  });
+ 
+  const handleChange1 = (event) => {
+    setAge(event.target.value);
+  };
+ 
+ <Box>
+              <FormControl fullWidth>
+                <InputLabel id="demo-simple-select-label">اختر قسم</InputLabel>
+                <Select
+                  labelId="demo-simple-select-label"
+                  id="demo-simple-select"
+                  value={age}
+                  label="اختر قسم"
+                  style={{ direction: "rtl", height: "50px" }}
+                  onChange={handleChange1}
+                >
+                  {data?.map((item) => {
+                    return (
+                      <MenuItem key={item.id} value={item.name}>
+                        {item.name}
+                      </MenuItem>
+                    );
+                  })}
+                </Select>
+              </FormControl>
+            </Box>
+ 
+getProjects/
+ 
+  // const columns = [
+  //   { name: "البريد الاكتروني", selector: "name", sortable: true },
+  //   { name: "البلد", selector: "age", sortable: true },
+  //   { name: "قيمة التبرع", selector: "city", sortable: true },
+  //   { name: "الراعي", selector: "city", sortable: true },
+  //   { name: "البنك", selector: "city", sortable: true },
+  //   { name: "نوع الكارت", selector: "city", sortable: true },
+  //   { name: "نوع العملي", selector: "city", sortable: true },
+  //   { name: "التحقق من نجاح العملية", selector: "city", sortable: true },
+  // ];
+
+  // const data = [
+  //   { name: "John Doe", age: 28, city: "New York" },
+  //   { name: "Jane Smith", age: 35, city: "San Francisco" },
+  //   { name: "Bob Johnson", age: 42, city: "Los Angeles" },
+  // ];
+ 
+import { Delete, Edit } from "@mui/icons-material";
+import { Button } from "@mui/material";
+ 
+/* eslint-disable react/prop-types */
+/* eslint-disable react/function-component-definition */
+/**
+=========================================================
+* Material Dashboard 2 React - v2.2.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard-react
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+// @mui material components
+import Icon from "@mui/material/Icon";
+
+// Material Dashboard 2 React components
+import MDBox from "components/MDBox";
+import MDTypography from "components/MDTypography";
+import MDAvatar from "components/MDAvatar";
+import MDProgress from "components/MDProgress";
+
+// Images
+import LogoAsana from "assets/images/small-logos/logo-asana.svg";
+import logoGithub from "assets/images/small-logos/github.svg";
+import logoAtlassian from "assets/images/small-logos/logo-atlassian.svg";
+import logoSlack from "assets/images/small-logos/logo-slack.svg";
+import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
+import logoInvesion from "assets/images/small-logos/logo-invision.svg";
+ 
+name
+ 
+ updatedPortions[index] = {
+        ...updatedPortions[index],
+        [field]: checked,
+      };
+ 
+.portions
+ 
+const [bankData, setBankData] = useState({
+    name: "",
+    eName: "",
+    swiftCode: "",
+    image: "",
+    bankAcountNumbers: [
+      {
+        bankType: "",
+        enBankType: "",
+        accountNumber: "",
+        iban: "",
+      },
+    ],
+  });
+ 
+  const options = [
+    "زكاه",
+    "صدقة جارية",
+    "صدقة",
+    "لحوم اضاحي",
+    "كراتين رمضان",
+    "زكاه الفطر",
+    "البذور",
+    "العشور",
+    "كفارة اليمين",
+    "العقيقة",
+    "فدية الصيام",
+    "اطعام الطعام",
+    "حملة ستر ودفا واطعام",
+    "اغاثة اهالي اسوان",
+    "لحوم اضاحي",
+    "وجبات افطار ساخنة",
+    "دعم غزة",
+  ];
+ 
+bankAcountNumbers
+ 
+bankData.bankAcountNumbers
+ 
+setBankData
+ 
+   <Box>
+                    <Typography variant="h6">iban</Typography>
+                    <TextField
+                      label={`Iban${index + 1}`}
+                      variant="outlined"
+                      margin="normal"
+                      name={`iban${index + 1}`}
+                      fullWidth
+                      style={{ direction: "rtl" }}
+                      required
+                      onChange={(e) => handlechangeArr(e, index, "iban")}
+                    />
+                  </Box>
+ 
+قم الحساب
+ 
+نوع
+ 
+ahah
+ 
+hshshs
+ 
+sutring
+ 
+stgring
+ 
+striking
+ 
+idjd
+ 
+لعنوان باللغة الانجليزية
+ 
+فارة اليمين
+ 
+لعنوان
+ 
+عنوان التفصيلي
+ 
+سم الجريدة
+ 
+textAlign: "right"
+ 
+ع الحساب باللغة الانجليزية
+ 
+نوع
+ 
+component=""
+ 
+legend
+ 
+fieldset
+ 
+Select Options
+ 
+Option
+ 
+Option
+ 
+Option
+ 
+name
+ 
+:
+ 
+axios
+ 
+ headers: {
+          "Content-Type": "multipart/form-data", // <- HERE
+        },
+ 
+ const formDataObject = new FormData();
+    formDataObject.append("swiftCode", bankData.swiftCode);
+    formDataObject.append("enName:", bankData.eName);
+    formDataObject.append("bankAcountNumbers", bankData.name);
+    formDataObject.append("image", bankData.image);
+    bankData.bankAcountNumbers.forEach((account, index) => {
+      formDataObject.append(`bankAcountNumbers[${index}][bankType]`, account.bankType);
+      formDataObject.append(`bankAcountNumbers[${index}][enBankType]`, account.enBankType);
+      formDataObject.append(`bankAcountNumbers[${index}][accountNumber]`, account.accountNumber);
+      formDataObject.append(`bankAcountNumbers[${index}][iban]`, account.iban);
+    });
+ 
+bankData.bankAcountNumbers.forEach((account, index) => {
+      formDataObject.append(`bankAcountNumbers[${index}][bankType]`, account.bankType);
+      formDataObject.append(`bankAcountNumbers[${index}][enBankType]`, account.enBankType);
+      formDataObject.append(`bankAcountNumbers[${index}][accountNumber]`, account.accountNumber);
+      formDataObject.append(`bankAcountNumbers[${index}][iban]`, account.iban);
+    });
+ 
+item
+ 
+baseurl + "Type"
+ 
+(res) => {}
+ 
+, projectState
+ 
+console.log("success")
+ 
+// Handle the response as needed
+ 
+data1 ? data1 : ""
+ 
+const [thedata, sethedata] = useState(data1 ? data1 : "");
+ 
+ data1={data1}
+ 
+console.log(projectState)
+ 
+emw
+ 
+wl
+ 
+sks
+ 
+eieiej
+ 
+
+    // Create a FormData object
+
+    // Send a POST request using Axios
+ 
+ const formDataObject = new FormData();
+    formDataObject.append("name", formData.name);
+    formDataObject.append("enName:", formData.enDescription);
+    formDataObject.append("description", formData.description);
+    formDataObject.append("image", formData.image.name);
+    formDataObject.append("projects", "null");
+ 
+ const handleImageChange = (event) => {
+      const file = event.target.files[0];
+      if (file) {
+        // Display the chosen photo
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          setSelectedImage(e.target.result);
+        };
+        reader.readAsDataURL(file);
+      }
+ 
+console.log(baseurl + "Category");
+  console.log("fkdkd", formData.image);
+  console.log(formData);
+ 
+
+      sortable: true,
+      cell: (row) => <CustomCell data={row.address} />,
+ 
+ const data = [
+    {
+      id: 1,
+      address: "القضاء على الجوع والفقر",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+    {
+      id: 2,
+      address: "الصحة الجيدة والرفاه",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+    {
+      id: 1,
+      address: "القضاء على الجوع والفقر",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+    {
+      id: 3,
+      address: "الصحة الجيدة والرفاه",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+    {
+      id: 4,
+      address: "القضاء على الجوع والفقر",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+    {
+      id: 5,
+      address: "الصحة الجيدة والرفاه",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+  ];
+ 
+&&
+ 
+data1
+ 
+// const columns = [
+  //   { name: "البريد الاكتروني", selector: "name", sortable: true },
+  //   { name: "البلد", selector: "age", sortable: true },
+  //   { name: "قيمة التبرع", selector: "city", sortable: true },
+  //   { name: "الراعي", selector: "city", sortable: true },
+  //   { name: "البنك", selector: "city", sortable: true },
+  //   { name: "نوع الكارت", selector: "city", sortable: true },
+  //   { name: "نوع العملي", selector: "city", sortable: true },
+  //   { name: "التحقق من نجاح العملية", selector: "city", sortable: true },
+  // ];
+
+  // const data = [
+  //   { name: "John Doe", age: 28, city: "New York" },
+  //   { name: "Jane Smith", age: 35, city: "San Francisco" },
+  //   { name: "Bob Johnson", age: 42, city: "Los Angeles" },
+  // ];
+ 
+ const data = [
+    {
+      id: 1,
+      address: "القضاء على الجوع والفقر",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+    {
+      id: 2,
+      address: "الصحة الجيدة والرفاه",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+    {
+      id: 1,
+      address: "القضاء على الجوع والفقر",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+    {
+      id: 3,
+      address: "الصحة الجيدة والرفاه",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+    {
+      id: 4,
+      address: "القضاء على الجوع والفقر",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+    {
+      id: 5,
+      address: "الصحة الجيدة والرفاه",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+  ];
+ 
+/* eslint-disable react/prop-types */
+/* eslint-disable react/function-component-definition */
+/**
+=========================================================
+* Material Dashboard 2 React - v2.2.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard-react
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+// @mui material components
+import Icon from "@mui/material/Icon";
+
+// Material Dashboard 2 React components
+import MDBox from "components/MDBox";
+import MDTypography from "components/MDTypography";
+import MDAvatar from "components/MDAvatar";
+import MDProgress from "components/MDProgress";
+
+// Images
+import LogoAsana from "assets/images/small-logos/logo-asana.svg";
+import logoGithub from "assets/images/small-logos/github.svg";
+import logoAtlassian from "assets/images/small-logos/logo-atlassian.svg";
+import logoSlack from "assets/images/small-logos/logo-slack.svg";
+import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
+import logoInvesion from "assets/images/small-logos/logo-invision.svg";
+import {
+  Hidden,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TablePagination,
+  TableRow,
+} from "@mui/material";
+ 
+const data = [
+    {
+      id: 1,
+      name: "البنك الاهلي المصري - فرع كورنيش النيل ",
+      img: "assets/ahlybank.jpg",
+    },
+    {
+      id: 2,
+      name: "البنك الاهلي المصري - فرع كورنيش النيل ",
+
+      img: "assets/ahlybank.jpg",
+    },
+    {
+      id: 3,
+      name: "البنك الاهلي المصري - فرع كورنيش النيل ",
+
+      img: "assets/ahlybank.jpg",
+    },
+  ];
+ 
+  {
+      name: "شعار البنك",
+      selector: (row) => row.img,
+      sortable: true,
+      cell: (row) => <Imagee data={row.img} />,
+    },
+ 
+name
+ 
+description
+ 
+formData
+ 
+"نوع الحساب"
+ 
+{" "}
+ 
+{" "}
+ 
+" "}
+ 
+</>
+ 
+<>
+ 
+   accountNumber: "",
+    iban: "",
+ 
+string
+ 
+        iban: "string",
+
+ 
+string
+ 
+string
+ 
+string
+ 
+name
+ 
+   const reader = new FileReader();
+      reader.onload = (e) => {
+        setSelectedImage(e.target.result);
+      };
+      reader.readAsDataURL(file);
+ 
+"image"
+ 
+englishDetails
+ 
+selectedImage
+ 
+your-api-endpoint
+ 
+name
+ 
+value
+ 
+""
+ 
+"
+ 
+import { baseurl } from "./BaseUrl";
+ 
+Material Dashboard 2 React
+ 
+<Button
+                  style={{ fontSize: "1.5rem", color: "yellow" }}
+                  variant=""
+                >
+                  اضافة طلب
+                </Button>
+ 
+pm 11:55:21 1/12/2014
+ 
+تاريخ
+ 
+    <div
+            style={{ width: "100%", background: "#222", padding: "0.5rem 0.4rem" }}
+            className="flex-cen"
+          >
+            <span style={{ color: "#fff" }}>تبرعات مضافة</span>
+          </div>
+ 
+    <div style={{ marginTop: "15px" }} className="flex-cenc">
+            <Button
+              variant="contained"
+              color="success"
+              style={{ background: "green", color: "white" }}
+            >
+              اعادة ارسال
+            </Button>
+            <Link to="" style={{ marginTop: "5px" }}>
+              الذهاب الى العملية
+            </Link>
+          </div>
+ 
+    <form>
+            <Box>
+              <Typography variant="h6" mb={2}>
+                اختر الحالة
+              </Typography>
+              <FormControl fullWidth>
+                <InputLabel id="demo-simple-select-label"> الحالة</InputLabel>
+                <Select
+                  labelId="demo-simple-select-label"
+                  id="demo-simple-select"
+                  value={age}
+                  label=" الحالة"
+                  style={{ direction: "rtl", height: "50px" }}
+                  onChange={handleChange}
+                >
+                  <MenuItem value={0}>كفارة اليمين</MenuItem>
+                  <MenuItem value={1}>كفارة اليمين</MenuItem>
+                  <MenuItem value={2}>كفارة اليمين</MenuItem>
+                </Select>
+              </FormControl>
+              <FormControl className="flex-cen" style={{ marginTop: "15px" }}>
+                <Button
+                  variant="contained"
+                  color="success"
+                  style={{ background: "green", color: "white" }}
+                >
+                  حفظ{" "}
+                </Button>
+              </FormControl>
+            </Box>{" "}
+          </form>
+          <div
+            style={{
+              width: "100%",
+              background: "green",
+              padding: "0.5rem 0.4rem",
+              textAlign: "right",
+              marginTop: "15px",
+              color: "white",
+            }}
+            className="flex-bet "
+          >
+            <div>Succeess</div>
+            <div>الحالة</div>
+          </div>
+ 
+derTasleemModal 
+ 
+   {/* <form className="modall">
+              <Box>
+                <Typography variant="h6">الاسم</Typography>
+                <TextField
+                  value={"Nahla"}
+                  variant="outlined"
+                  margin="normal"
+                  fullWidth
+                  required
+                  style={{ direction: "rtl" }}
+                />
+              </Box>
+              <Box>
+                <Typography variant="h6">Amount</Typography>
+                <TextField
+                  variant="outlined"
+                  margin="normal"
+                  fullWidth
+                  required
+                  style={{ direction: "rtl" }}
+                />
+              </Box>{" "}
+              <Box>
+                <Typography variant="h6">Currency</Typography>
+                <TextField
+                  value={"EGP"}
+                  variant="outlined"
+                  margin="normal"
+                  fullWidth
+                  required
+                  style={{ direction: "rtl" }}
+                />
+              </Box>{" "}
+              <Box>
+                <Typography variant="h6">Pay/status</Typography>
+                <TextField
+                  variant="outlined"
+                  margin="normal"
+                  fullWidth
+                  required
+                  style={{ direction: "rtl" }}
+                />
+              </Box>{" "}
+              <Box>
+                <Typography variant="h6">Payement Option</Typography>
+                <TextField
+                  variant="outlined"
+                  margin="normal"
+                  fullWidth
+                  required
+                  style={{ direction: "rtl" }}
+                />
+              </Box>{" "}
+              <Box>
+                <Typography variant="h6">Quantity</Typography>
+                <TextField
+                  value={1}
+                  variant="outlined"
+                  margin="normal"
+                  fullWidth
+                  required
+                  style={{ direction: "rtl" }}
+                />
+              </Box>{" "}
+              <Box>
+                <Typography variant="h6" mb={2}>
+                  المشروع
+                </Typography>
+                <FormControl fullWidth>
+                  <InputLabel id="demo-simple-select-label">اختر مشروع</InputLabel>
+                  <Select
+                    labelId="demo-simple-select-label"
+                    id="demo-simple-select"
+                    value={age}
+                    label="اختر مشروع"
+                    style={{ direction: "rtl", height: "50px" }}
+                    onChange={handleChange}
+                  >
+                    <MenuItem value={0}>كفارة اليمين</MenuItem>
+                    <MenuItem value={1}>كفارة اليمين</MenuItem>
+                    <MenuItem value={2}>كفارة اليمين</MenuItem>
+                  </Select>
+                </FormControl>
+              </Box>{" "}
+              <Box>
+                <Typography variant="h6">Donate Type</Typography>
+                <TextField
+                  value={"زكاه"}
+                  variant="outlined"
+                  margin="normal"
+                  fullWidth
+                  required
+                  style={{ direction: "rtl" }}
+                />
+              </Box>{" "}
+              <Box>
+                <Typography variant="h6" mb={2}>
+                  سهم
+                </Typography>
+                <FormControl fullWidth>
+                  <InputLabel id="demo-simple-select-label">كفارة اليمين</InputLabel>
+                  <Select
+                    labelId="demo-simple-select-label"
+                    id="demo-simple-select"
+                    value={age}
+                    label="اختر مشروع"
+                    style={{ direction: "rtl", height: "50px" }}
+                    onChange={handleChange}
+                  >
+                    <MenuItem value={0}>ك</MenuItem>
+                    <MenuItem value={1}>كفارة اليمين</MenuItem>
+                    <MenuItem value={2}>كفارة اليمين</MenuItem>
+                  </Select>
+                </FormControl>
+              </Box>{" "}
+              <Box mt={2}>
+                <Button
+                  variant="contained"
+                  color="success"
+                  style={{ backgroundColor: "green", color: "white" }}
+                >
+                  حفظ
+                </Button>
+              </Box>
+            </form> */}
+ 
+   <div style={{ cursor: "pointer" }}>
+            <MdDelete size={30} />
+          </div>
+ 
+RegEdit
+ 
+  {
+      id: 10,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+      wasl: 938373,
+    },
+    {
+      id: 11,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+      wasl: 938373,
+    },
+    {
+      id: 12,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      wasl: 938373,
+
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+ 
+tbro
+ 
+قيمة
+ 
+tbro
+ 
+قيمة
+ 
+bank
+ 
+البنك
+ 
+   <CustomCellWithIcons
+              data={row}
+              onClickEdit={() => handleEdit(row)}
+              onClickSearch={() => handleSearch(row)}
+              onClickEmail={() => handleEmail(row)}
+              onClickInfo={(row) => handleInfo(row)}
+            />
+ 
+<div>tsleem</div>
+ 
+اخبار
+ 
+// import Mytable1data from "../data/projectsTableData";
+import Footer from "examples/Footer";
+import NewsTable from "./NewsTable";
+import NewsModal from "./NewsModal";
+ 
+<NewsTable />
+ 
+  // const columns = [
+  //   { name: "البريد الاكتروني", selector: "name", sortable: true },
+  //   { name: "البلد", selector: "age", sortable: true },
+  //   { name: "قيمة التبرع", selector: "city", sortable: true },
+  //   { name: "الراعي", selector: "city", sortable: true },
+  //   { name: "البنك", selector: "city", sortable: true },
+  //   { name: "نوع الكارت", selector: "city", sortable: true },
+  //   { name: "نوع العملي", selector: "city", sortable: true },
+  //   { name: "التحقق من نجاح العملية", selector: "city", sortable: true },
+  // ];
+
+  // const data = [
+  //   { name: "John Doe", age: 28, city: "New York" },
+  //   { name: "Jane Smith", age: 35, city: "San Francisco" },
+  //   { name: "Bob Johnson", age: 42, city: "Los Angeles" },
+  // ];
+ 
+ تق
+ 
+تقدمها الاورمان
+ 
+handleOpen={handleOpen}
+ 
+   address: "حملة ستر ودفا لاطعام الاسر الاولى بالرعاية بقري ونجوع",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+ 
+    {
+      id: 2,
+      address: "حملة ستر ودفا لاطعام الاسر الاولى بالرعاية بقري ونجوع",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+    {
+      id: 3,
+      address: "حملة ستر ودفا لاطعام الاسر الاولى بالرعاية بقري ونجوع",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+    {
+      id: 4,
+      address: "حملة ستر ودفا لاطعام الاسر الاولى بالرعاية بقري ونجوع",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+    {
+      id: 5,
+      address: "حملة ستر ودفا لاطعام الاسر الاولى بالرعاية بقري ونجوع",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+ 
+  {
+      name: "الجريدة",
+      selector: (row) => row.jor,
+      cell: (row) => <CustomCell data={row.jor} />,
+    },
+    {
+      name: "تاريخ الاضافة",
+      selector: (row) => row.hisadd,
+      cell: (row) => <CustomCell data={row.hisadd} />,
+    },
+ 
+ {
+      name: "تاريخ الاضافة",
+      selector: (row) => row.hisadd,
+      cell: (row) => <CustomCell data={row.hisadd} />,
+    },
+ 
+address
+ 
+العنوان
+ 
+ <Box>
+                <Typography variant="h6"> اختر صورة للجريدة</Typography>
+                <input type="file" onChange={handleImageChange} />
+                {selectedImage && (
+                  <Box mt={2}>
+                    <img
+                      src={selectedImage}
+                      alt="Chosen"
+                      style={{ maxWidth: "100%", maxHeight: "200px" }}
+                    />
+                  </Box>
+                )}
+              </Box>
+ 
+ل المحتوى....
+ 
+فاصيل المحتوى
+ 
+عنوان
+ 
+عنوان
+ 
+العنوان
+ 
+خبر
+ 
+// import Mytable1data from "../data/projectsTableData";
+import Footer from "examples/Footer";
+import NewsTable from "./NewsTable";
+import NewsModal from "./NewsModal";
+import QuestionsMostModal from "./QuestionsMostModal";
+import QuestionsMostTable from "./QuestionsMostTable";
+// import ActivityTable from "./ActivityTable";
+// import T2seetTable from "./T2seetTable";
+ 
+Management
+ 
+الادارة
+ 
+مجلس
+ 
+NewsTable
+ 
+الجريدة
+ 
+عنوان
+ 
+العنوان
+ 
+   <Box>
+                <Typography variant="h6">العنوان باللغة الانجليزية</Typography>
+                <TextField
+                  label="عنوان الخبر"
+                  variant="outlined"
+                  margin="normal"
+                  fullWidth
+                  required
+                  style={{ direction: "rtl" }}
+                />
+              </Box>
+              <Box>
+                <Typography variant="h6" gutterBottom>
+                  المحتوى
+                </Typography>
+                <TextareaAutosize
+                  aria-label="Message"
+                  placeholder="تفاصيل المحتوى...."
+                  minRows={6}
+                  maxRows={6}
+                  style={{ width: "100%", marginTop: 8, direction: "rtl" }}
+                  required
+                />
+              </Box>
+  
+              <Box>
+                <Typography variant="h6" gutterBottom>
+                  التفاصيل باللغة الانجليزية{" "}
+                </Typography>
+                <TextareaAutosize
+                  aria-label="Additional Comments"
+                  placeholder=" تفاصيل المحتوى باللغة الانجليزية ....."
+                  minRows={6}
+                  maxRows={7}
+                  style={{ width: "100%", marginTop: 8, direction: "rtl" }}
+                />
+              </Box>
+              <Box>
+                <Typography variant="h6"> اختر صورة للجريدة</Typography>
+                <input type="file" onChange={handleImageChange} />
+                {selectedImage && (
+                  <Box mt={2}>
+                    <img
+                      src={selectedImage}
+                      alt="Chosen"
+                      style={{ maxWidth: "100%", maxHeight: "200px" }}
+                    />
+                  </Box>
+                )}
+              </Box>
+ 
+اخبار
+ 
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+ 
+ jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+ 
+     jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+ 
+     jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+ 
+   {
+      name: "الجريدة",
+      selector: (row) => row.jor,
+      cell: (row) => <CustomCell data={row.jor} />,
+    },
+    {
+      name: "تاريخ الاضافة",
+      selector: (row) => row.hisadd,
+      cell: (row) => <CustomCell data={row.hisadd} />,
+    },
+ 
+  jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+ 
+NewsTable
+ 
+// import Mytable1data from "../data/projectsTableData";
+import Footer from "examples/Footer";
+import NewsTable from "./NewsTable";
+import NewsModal from "./NewsModal";
+ 
+عنوان
+ 
+العنوان
+ 
+rowD
+ 
+  const nav = useNavigate();
+  useEffect(() => {
+    if (rowD && typeof rowD === "number" && rowD !== 0) {
+      // Only navigate if rowD is a number (assuming it's an ID)
+     nav(`/تبرعات/${rowD}`)
+    }
+  }, [rowD]);
+ 
+null
+ 
+ const nav=usenav
+  useEffect(()=>{
+
+  })
+ 
+to={`/تبرعات/${rowD}`}
+ 
+fkf
+ 
+تبرعات/4
+ 
+</TextField>
+ 
+الادارة
+ 
+ <Button
+                  style={{ fontSize: "1.5rem", color: "yellow" }}
+                  variant=""
+                  onClick={handleOpen}
+                >
+                  اضافة مدير
+                </Button>
+ 
+  <CustomCellWithIcons
+          data={row}
+          onClickEdit={() => handleEdit(row)}
+          onClickSearch={() => handleSearch(row)}
+          onClickEmail={() => handleEmail(row)}
+          onClickInfo={() => handleInfo(row)}
+        />
+ 
+,width:"6rem"
+ 
+سم المنطقة
+ 
+<div>mob</div>
+ 
+  <CustomCellWithIcons
+          data={row}
+          onClickEdit={() => handleEdit(row)}
+          onClickSearch={() => handleSearch(row)}
+          onClickEmail={() => handleEmail(row)}
+          onClickInfo={() => handleInfo(row)}
+        />
+ 
+import ManagementTable from "./ManagementTable";
+import ManagementModal from "./ManagementModal";
+ 
+   <Box>
+              <Typography variant="h6"> اختر صورة </Typography>
+              <input type="file" onChange={handleImageChange} />
+              {selectedImage && (
+                <Box mt={2}>
+                  <img
+                    src={selectedImage}
+                    alt="Chosen"
+                    style={{ maxWidth: "100%", maxHeight: "200px" }}
+                  />
+                </Box>
+              )}
+            </Box>
+ 
+<Box>
+              <Typography variant="h6">تويتر</Typography>
+              <TextField
+                label="تويتر"
+                variant="outlined"
+                margin="normal"
+                fullWidth
+                required
+                style={{ direction: "rtl" }}
+              />
+            </Box>
+ 
+  <Box>
+              <Typography variant="h6">لبنكد ان</Typography>
+              <TextField
+                label="لينكد ان"
+                variant="outlined"
+                margin="normal"
+                fullWidth
+                required
+                style={{ direction: "rtl" }}
+              />
+            </Box>{" "}
+ 
+   <Box>
+              <Typography variant="h6">انستجرام</Typography>
+              <TextField
+                label="انستجرام"
+                variant="outlined"
+                margin="normal"
+                fullWidth
+                required
+                style={{ direction: "rtl" }}
+              />
+            </Box>{" "}
+ 
+تويتر
+ 
+الاسم
+ 
+الاسم
+ 
+ختر مشروع
+ 
+مشروع
+ 
+مدير
+ 
+"Nahla"
+ 
+   <Box>
+              <Typography variant="h6">العنوان باللغة الانجليزية</Typography>
+              <TextField
+                label="عنوان المنطقة"
+                variant="outlined"
+                margin="normal"
+                fullWidth
+                required
+                style={{ direction: "rtl" }}
+              />
+            </Box>
+ 
+                  طرق اخرى للتبرع
+
+ 
+عنوان
+ 
+عنوان
+ 
+عنوان
+ 
+نوان القسم
+ 
+عن
+ 
+العنوان
+ 
+ 
+            <Box>
+              <Typography variant="h6" gutterBottom>
+                التفاصيل باللغة الانجليزية
+              </Typography>
+              <TextareaAutosize
+                aria-label="Message"
+                minRows={6}
+                maxRows={6}
+                style={{ width: "100%", marginTop: 8, direction: "rtl" }}
+                required
+              />
+            </Box>
+ 
+ <Box>
+              <Typography variant="h6" gutterBottom>
+                التفاصيل
+              </Typography>
+              <TextareaAutosize
+                aria-label="Message"
+                placeholder=""
+                minRows={6}
+                maxRows={6}
+                style={{ width: "100%", marginTop: 8, direction: "rtl" }}
+                required
+              />
+            </Box>
+ 
+  <Box>
+              <Typography variant="h6" mb={2}>
+                محافظات وتطبيقات
+              </Typography>
+              <FormControl fullWidth>
+                <InputLabel id="demo-simple-select-label"> محافظات وتطبيقات</InputLabel>
+                <Select
+                  labelId="demo-simple-select-label"
+                  id="demo-simple-select"
+                  value={age}
+                  label="محافظات وتطبيقات"
+                  style={{ direction: "rtl", height: "50px" }}
+                  onChange={handleChange}
+                >
+                  <MenuItem value={0}>كفارة اليمين</MenuItem>
+                  <MenuItem value={1}>كفارة اليمين</MenuItem>
+                  <MenuItem value={2}>كفارة اليمين</MenuItem>
+                </Select>
+              </FormControl>
+            </Box>{" "}
+ 
+import ManagementTable from "./ManagementTable";
+import ManagementModal from "./Management";
+ 
+assets/basata.png"
+ 
+بساطة
+ 
+  {
+      id: 3,
+      name: "بساطة",
+      img: "assets/basata.png",
+    },
+ 
+jib
+ 
+img
+ 
+img
+ 
+Imagee
+ 
+الشعار
+ 
+للتبرع
+ 
+طرق
+ 
+import WayDonationTable from "./WayDonationTable";
+import WayDonationModal from "./WayDonationModal";
+ 
+تر مشروع
+ 
+ختر مشروع
+ 
+المشروع
+ 
+للشريك
+ 
+التفاصيل
+ 
+ف وصف
+ 
+
+              <Box>
+                <Typography variant="h6">رابط الويب للشريك</Typography>
+                <TextField
+                  label="example.com"
+                  variant="outlined"
+                  margin="normal"
+                  fullWidth
+                  style={{ direction: "rtl" }}
+                  required
+                />
+              </Box>
+ 
+سم الشريك
+ 
+السم
+ 
+م الشريك
+ 
+, borderRadius: "50%"
+ 
+نهضة
+ 
+نهضة
+ 
+مصر
+ 
+نهضة
+ 
+Nahda.webp
+ 
+الشريك
+ 
+اسم
+ 
+الشريك
+ 
+
+import PartenerTable from "./PartenerTable";
+import PartenerModal from "./PartenerModal";
+ 
+import PartenerTable from "./PartenerTable";
+import PartenerModal from "./PartenerModal";
+ 
+Partener
+ 
+النجاح
+ 
+شريك
+ 
+شريك
+ 
+شريك
+ 
+PartenerTable
+ 
+{" "}
+ 
+كيفية التبرع
+ 
+الشركاء
+ 
+العنوان
+ 
+    <MDButton
+          component="a"
+          href="https://www.creative-tim.com/product/material-dashboard-pro-react"
+          target="_blank"
+          rel="noreferrer"
+          variant="gradient"
+          color={sidenavColor}
+          fullWidth
+        >
+          {/* upgrade to pro */}
+        </MDButton>
+ 
+   <MDBox p={2} mt="auto">
+        <MDButton
+          component="a"
+          href="https://www.creative-tim.com/product/material-dashboard-pro-react"
+          target="_blank"
+          rel="noreferrer"
+          variant="gradient"
+          color={sidenavColor}
+          fullWidth
+        >
+          upgrade to pro
+        </MDButton>
+      </MDBox>
+ 
+بنك الاهلي المصري
+ 
+نك الاهلي المصري- 
+ 
+الشريك
+ 
+import Footer from "examples/Footer";
+import JornalsTable from "./JornalTable";
+import JornalModal from "./JornalModal";
+ 
+JornalModal
+ 
+JornalsTable />
+ 
+الصحف
+ 
+code
+ 
+code
+ 
+code
+ 
+ كود
+ 
+سويفت
+ 
+سويفت
+ 
+يفت كود
+ 
+example.com
+ 
+بط الويب للشريك
+ 
+المنطقة
+ 
+الشريك
+ 
+ان المنطقة
+ 
+نطقة باللغة الانجليزية
+ 
+ن القسم
+ 
+الجريدة
+ 
+ <div style={{ cursor: "pointer" }}>
+            <MdDelete size={30} />
+          </div>
+ 
+ <div>
+              <MdDelete size={30} />
+            </div>
+ 
+الجريدة
+ 
+ا
+ 
+"اخبار الاورمان
+ 
+import Footer from "examples/Footer";
+import JornalsTable from "./JornalTable";
+import JornalModal from "./JornalModal";
+ 
+ornalsTable />
+ 
+جريدة
+ 
+   {
+      id: 2,
+      address: "مستشفى الاورمان لسرطان الكبار بالصعيد",
+      dep: "الصحة الجيدة والرفاه",
+    },
+    {
+      id: 3,
+      address: "مستشفى الاورمان لسرطان الكبار بالصعيد",
+      dep: "الصحة الجيدة والرفاه",
+    },
+ 
+dep
+ 
+address
+ 
+بالصعيد
+ 
+الكبار
+ 
+ {
+      name: "السهم",
+      selector: (row) => row.sahm,
+    },
+ 
+Description
+ 
+  {
+      name: "الإجراءات",
+      cell: (row) => (
+        <div style={{ display: "flex", cursor: "pointer" }}>
+          <div>
+            <FaRegEdit size={30} />
+          </div>
+          <div style={{ cursor: "pointer" }}>
+            <MdDelete size={30} />
+          </div>
+        </div>
+      ),
+    },
+ 
+السهم
+ 
+address
+ 
+العنوان
+ 
+o={`/الموظفين/${row.id}`}
+ 
+  {
+      name: "",
+      cell: (row) => (
+        <div style={{ display: "flex", cursor: "pointer" }}>
+          <div>
+            <FaRegEdit size={30} />
+          </div>
+          <div style={{ cursor: "pointer" }}>
+            <MdDelete size={30} />
+          </div>
+        </div>
+      ),
+    },
+ 
+email
+ 
+البريد
+ 
+name
+ 
+ img: "assets/bg-reset-cover.jpeg",
+ 
+ {
+      id: 2,
+      name: "الاهرام",
+      img: "assets/bg-reset-cover.jpeg",
+    },
+    {
+      id: 3,
+      name: "الاهرام",
+      img: "assets/bg-reset-cover.jpeg",
+    },
+ 
+his
+ 
+اسم
+ 
+الرسالة
+ 
+تاريخ
+ 
+تاريخ
+ 
+his
+ 
+تاريخ
+ 
+img
+ 
+الجريدة
+ 
+ const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+ 
+ <MDBox
+                mx={2}
+                mt={-3}
+                py={3}
+                px={2}
+                variant="gradient"
+                bgColor="info"
+                borderRadius="lg"
+                coloredShadow="info"
+                style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}
+              >
+                <MDTypography variant="h6" color="white" mx={2}>
+                  الصحف
+                </MDTypography>
+                <Button
+                  style={{ fontSize: "1.5rem", color: "yellow" }}
+                  variant=""
+                  onClick={handleOpen}
+                >
+                  اضافة جريدة
+                </Button>
+              </MDBox>
+ 
+EstMontahtyTable />
+ 
+import Footer from "examples/Footer";
+import JornalsTable from "./JornalTable";
+import JornalModal from "./JornalModal";
+ 
+<div>تواصل</div>
+ 
+contactUs
+ 
+Manar Bahaa
+ 
+name
+ 
+الاسم
+ 
+الاسم
+ 
+الاقساط
+ 
+fff
+ 
+olor
+ 
+Color
+ 
+fff
+ 
+orangered
+ 
+Remember me
+ 
+Email
+ 
+     action={{
+          type: "external",
+          route: "https://creative-tim.com/product/material-dashboard-react",
+          label: "free dow",
+          color: "dark",
+        }}
+      />
+ 
+   <MDBox mt={3} mb={1} textAlign="center">
+              <MDTypography variant="button" color="text">
+                Don&apos;t have an account?{" "}
+                <MDTypography
+                  component={Link}
+                  to="/authentication/sign-up"
+                  variant="button"
+                  color="info"
+                  fontWeight="medium"
+                  textGradient
+                >
+                  Sign up
+                </MDTypography>
+              </MDTypography>
+            </MDBox>
+ 
+color="info"
+ 
+orange-
+ 
+info
+ 
+orange-
+ 
+ <MDTypography variant="h4" fontWeight="medium" color="white" mt={1}>
+            Sign in
+          </MDTypography>
+ 
+    <Grid container spacing={3} justifyContent="center" sx={{ mt: 1, mb: 2 }}>
+            <Grid item xs={2}>
+              <MDTypography component={MuiLink} href="#" variant="body1" color="white">
+                <FacebookIcon color="inherit" />
+              </MDTypography>
+            </Grid>
+            <Grid item xs={2}>
+              <MDTypography component={MuiLink} href="#" variant="body1" color="white">
+                <GitHubIcon color="inherit" />
+              </MDTypography>
+            </Grid>
+            <Grid item xs={2}>
+              <MDTypography component={MuiLink} href="#" variant="body1" color="white">
+                <GoogleIcon color="inherit" />
+              </MDTypography>
+            </Grid>
+          </Grid>
+ 
+darkMode
+ 
+miniSidenav
+ 
+style={{marginTop:"30px"}}
+ 
+,justifyContent:"flex-start"
+ 
+ <FaUser />
+ 
+<Typography>Profile</Typography>
+ 
+Bahaa
+ 
+  {
+    type: "collapse",
+    name: "اخبار رئيسية",
+    key: "كونتاكت",
+    route: "/تبرعات/:id",
+    component: <MyProfile />,
+  },
+ 
+clients
+ 
+  {
+    type: "collapse",
+    name: "الموظفين",
+    key: "بروفايل",
+    route: "/الموظفين/:id",
+    component: <ClientProfile />,
+  },
+ 
+الموظفين
+ 
+clients
+ 
+الموظفين
+ 
+الموظفين
+ 
+clients
+ 
+ <MDTypography variant="h6" color="white" mx={2}>
+                  الموظفين
+                </MDTypography>
+ 
+"مكتب طنطا
+ 
+    <div style={{ cursor: "pointer" }}>
+            <MdDelete size={30} />
+          </div>
+ 
+address
+ 
+</TextField>
+ 
+<Button
+                  style={{ fontSize: "1.5rem", color: "yellow" }}
+                  variant=""
+                  onClick={handleOpen}
+                >
+                  اضافة فرع
+                </Button>
+ 
+الفروع
+ 
+/authentication/sign-up
+ 
+import BranchesTable from "./BranchTable";
+import BranchModal from "./BranchModal";
+ 
+BranchesTable
+ 
+Your Custom Placeholder
+ 
+اختر
+ 
+   {selectedImage && (
+                <Box mt={2}>
+                  <img
+                    src={selectedImage}
+                    alt="Chosen"
+                    style={{ maxWidth: "100%", maxHeight: "200px" }}
+                  />
+                </Box>
+              )}
+ 
+تفاصيل
+ 
+التفاصيل
+ 
+القسم
+ 
+عنوان
+ 
+العنوان
+ 
+العنوان
+ 
+modal
+ 
+handleOpen={handleOpen}
+ 
+الاهرام
+ 
+img
+ 
+{
+      name: "اسم الجريدة",
+      selector: (row) => row.name,
+      sortable: true,
+      cell: (row) => <CustomCell data={row.name} />,
+    },
+ 
+الجريدة
+ 
+branches
+ 
+dashboard
+ 
+dashboard
+ 
+dashboard
+ 
+ff
+ 
+dashboard
+ 
+.estdrawer
+ 
+    console.log("Selected Start Date:", formattedStartDate);
+    console.log("Selected End Date:", formattedEndDate);
+ 
+date
+ 
+value={startDate} onChange={handleStartDateChange}
+ 
+    {
+      name: "",
+      cell: (row) => (
+        <div style={{ display: "flex", cursor: "pointer" }}>
+          <div>
+            <FaRegEdit size={30} />
+          </div>
+          <div style={{ cursor: "pointer" }}>
+            <MdDelete size={30} />
+          </div>
+        </div>
+      ),
+    },
+ 
+  {
+      id: 2,
+      name: "الاهرام",
+      img: "assets/bg-reset-cover.jpeg",
+    },
+    {
+      id: 3,
+      name: "الاهرام",
+      img: "assets/bg-reset-cover.jpeg",
+    },
+ 
+الاهرام
+ 
+name
+ 
+name
+ 
+الاسم
+ 
+اسم
+ 
+img
+ 
+الجريدة
+ 
+img
+ 
+Imagee
+ 
+الجريدة
+ 
+ البحث{" "}
+ 
+  <List>
+            <ListItem></ListItem>
+          </List>
+ 
+   <ListItemButton>
+                </ListItemButton>
+ 
+key={text} disablePadding
+ 
+   <Typography variant="h6" noWrap component="div">
+              البحث{" "}
+            </Typography>
+ 
+       <Divider />
+          <List>
+            {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+              <ListItem key={text} disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+                  <ListItemText primary={text} />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
+ 
+ height: "100%" 
+ 
+              Persistent drawer
+
+ 
+,border:"1px solid green"
+ 
+,border:"1px solid blue"
+ 
+<Typography paragraph>
+            Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
+            facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
+            tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
+            consequat mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus
+            sed vulputate odio. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in.
+            In hendrerit gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem
+            et tortor. Habitant morbi tristique senectus et. Adipiscing elit duis tristique
+            sollicitudin nibh sit. Ornare aenean euismod elementum nisi quis eleifend. Commodo
+            viverra maecenas accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam
+            ultrices sagittis orci a.
+          </Typography>
+ 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent
+            elementum facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in
+            hendrerit gravida rutrum quisque non tellus. Convallis convallis tellus id interdum
+            velit laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing.
+            Amet nisl suscipit adipiscing bibendum est ultricies integer quis. Cursus euismod quis
+            viverra nibh cras. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo.
+            Mauris commodo quis imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus
+            at augue. At augue eget arcu dictum varius duis at consectetur lorem. Velit sed
+            ullamcorper morbi tincidunt. Lorem donec massa sapien faucibus et molestie ac.
+ 
+rtl
+ 
+const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
+  ({ theme, open }) => ({
+    flexGrow: 1,
+    padding: theme.spacing(3),
+    transition: theme.transitions.create("margin", {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.leavingScreen,
+    }),
+    marginLeft: `-${drawerWidth}px`,
+    ...(open && {
+      transition: theme.transitions.create("margin", {
+        easing: theme.transitions.easing.easeOut,
+        duration: theme.transitions.duration.enteringScreen,
+      }),
+      marginLeft: 0,
+    }),
+  })
+);
+ 
+ position: "absolute",
+          left: "0",
+          top: "0",
+ 
+,border:"1px solid"
+ 
+,border:"1px solid"
+ 
+position="absolute"
+ 
+position: 'absolute',
+ 
+border:"1px solid green" 
+ 
+ <MDBox pt={6} pb={3}>
+        <Grid container spacing={6}>
+          <Grid item xs={12}>
+            <Card>
+              <MDBox>
+              </MDBox>
+              <MDBox></MDBox>
+            </Card>
+          </Grid>
+        </Grid>
+      </MDBox
+ 
+   <DashboardNavbar />
+      <MDBox pt={6} pb={3}>
+        <Grid container spacing={6}>
+          <Grid item xs={12}>
+            <Card>
+              <MDBox>
+              </MDBox>
+              <MDBox></MDBox>
+            </Card>
+          </Grid>
+        </Grid>
+      </MDBox>
+ 
+fixed
+ 
+  <MDBox
+                mx={2}
+                mt={-3}
+                py={3}
+                px={2}
+                variant="gradient"
+                bgColor="info"
+                borderRadius="lg"
+                coloredShadow="info"
+                style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}
+              >
+                <MDTypography variant="h6" color="white" mx={2}>
+                  الصحف
+                </MDTypography>
+                <Button
+                  style={{ fontSize: "1.5rem", color: "yellow" }}
+                  variant=""
+                  onClick={handleOpen}
+                >
+                  اضافة جريدة
+                </Button>
+              </MDBox>
+ 
+<div>تواصل</div>
+ 
+<JornalsTable />
+ 
+  <Divider />
+        <List>
+          {["All mail", "Trash", "Spam"].map((text, index) => (
+            <ListItem key={text} disablePadding>
+              <ListItemButton>
+                <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+        </List>
+ 
+ <Typography paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non
+          enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus
+          imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus.
+          Convallis convallis tellus id interdum velit laoreet id donec ultrices.
+          Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
+          adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra
+          nibh cras. Metus vulputate eu scelerisque felis imperdiet proin fermentum
+          leo. Mauris commodo quis imperdiet massa tincidunt. Cras tincidunt lobortis
+          feugiat vivamus at augue. At augue eget arcu dictum varius duis at
+          consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem donec massa
+          sapien faucibus et molestie ac.
+        </Typography>
+        <Typography paragraph>
+          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper
+          eget nulla facilisi etiam dignissim diam. Pulvinar elementum integer enim
+          neque volutpat ac tincidunt. Ornare suspendisse sed nisi lacus sed viverra
+          tellus. Purus sit amet volutpat consequat mauris. Elementum eu facilisis
+          sed odio morbi. Euismod lacinia at quis risus sed vulputate odio. Morbi
+          tincidunt ornare massa eget egestas purus viverra accumsan in. In hendrerit
+          gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem
+          et tortor. Habitant morbi tristique senectus et. Adipiscing elit duis
+          tristique sollicitudin nibh sit. Ornare aenean euismod elementum nisi quis
+          eleifend. Commodo viverra maecenas accumsan lacus vel facilisis. Nulla
+          posuere sollicitudin aliquam ultrices sagittis orci a.
+        </Typography>
+ 
+   <div
+            style={{ width: "100%", background: "#222", padding: "0.5rem 0.4rem" }}
+            className="flex-cen"
+          >
+            <span style={{ color: "#fff" }}>تبرعات مضافة</span>
+          </div>
+          <p>
+            <span>697444</span>
+            <span> : رقم الايصال</span>
+          </p>
+          <p>
+            <span>pm 11:55:21 1/12/2014</span>
+            <span> : تاريخ العملية </span>
+          </p>
+          <p>
+            <span>صافي التبرع :</span>
+            <span> 330</span>
+          </p>
+          <div style={{ marginTop: "15px" }} className="flex-cenc">
+            <Button
+              variant="contained"
+              color="success"
+              style={{ background: "green", color: "white" }}
+            >
+              اعادة ارسال
+            </Button>
+            <Link to="" style={{ marginTop: "5px" }}>
+              الذهاب الى العملية
+            </Link>
+          </div>
+          <form>
+            <Box>
+              <Typography variant="h6" mb={2}>
+                اختر الحالة
+              </Typography>
+              <FormControl fullWidth>
+                <InputLabel id="demo-simple-select-label"> الحالة</InputLabel>
+                <Select
+                  labelId="demo-simple-select-label"
+                  id="demo-simple-select"
+                  value={age}
+                  label=" الحالة"
+                  style={{ direction: "rtl", height: "50px" }}
+                  onChange={handleChange}
+                >
+                  <MenuItem value={0}>كفارة اليمين</MenuItem>
+                  <MenuItem value={1}>كفارة اليمين</MenuItem>
+                  <MenuItem value={2}>كفارة اليمين</MenuItem>
+                </Select>
+              </FormControl>
+              <FormControl className="flex-cen" style={{ marginTop: "15px" }}>
+                <Button
+                  variant="contained"
+                  color="success"
+                  style={{ background: "green", color: "white" }}
+                >
+                  حفظ{" "}
+                </Button>
+              </FormControl>
+            </Box>{" "}
+          </form>
+          <div
+            style={{
+              width: "100%",
+              background: "green",
+              padding: "0.5rem 0.4rem",
+              textAlign: "right",
+              marginTop: "15px",
+              color: "white",
+            }}
+            className="flex-bet "
+          >
+            <div>Succeess</div>
+            <div>الحالة</div>
+          </div>
+ 
+  <span>هدف التبرع :</span>
+            <span> صدقة جارية</span>
+ 
+ <p>
+              <span>697444</span>
+              <span> : رقم الايصال </span>
+            </p>{" "}
+ 
+   <p>
+              <span>EGP</span>
+              <span> : العملة</span>
+            </p>
+ 
+قم التحويل 
+ 
+  <p>
+              <span>CIB</span>
+              <span> : البنك</span>
+            </p>
+ 
+هندس حاتم
+ 
+هندس حاتم
+ 
+  const handleImageChange = (event) => {
+      const file = event.target.files[0];
+      if (file) {
+        // Display the chosen photo
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          setSelectedImage(e.target.result);
+        };
+        reader.readAsDataURL(file);
+      }
+    };
+ 
+            {/* <form className="modall">
+              <Box>
+                <Typography variant="h6">الاسم</Typography>
+                <TextField
+                  value={"Nahla"}
+                  variant="outlined"
+                  margin="normal"
+                  fullWidth
+                  required
+                  style={{ direction: "rtl" }}
+                />
+              </Box>
+              <Box>
+                <Typography variant="h6">Amount</Typography>
+                <TextField
+                  variant="outlined"
+                  margin="normal"
+                  fullWidth
+                  required
+                  style={{ direction: "rtl" }}
+                />
+              </Box>{" "}
+              <Box>
+                <Typography variant="h6">Currency</Typography>
+                <TextField
+                  value={"EGP"}
+                  variant="outlined"
+                  margin="normal"
+                  fullWidth
+                  required
+                  style={{ direction: "rtl" }}
+                />
+              </Box>{" "}
+              <Box>
+                <Typography variant="h6">Pay/status</Typography>
+                <TextField
+                  variant="outlined"
+                  margin="normal"
+                  fullWidth
+                  required
+                  style={{ direction: "rtl" }}
+                />
+              </Box>{" "}
+              <Box>
+                <Typography variant="h6">Payement Option</Typography>
+                <TextField
+                  variant="outlined"
+                  margin="normal"
+                  fullWidth
+                  required
+                  style={{ direction: "rtl" }}
+                />
+              </Box>{" "}
+              <Box>
+                <Typography variant="h6">Quantity</Typography>
+                <TextField
+                  value={1}
+                  variant="outlined"
+                  margin="normal"
+                  fullWidth
+                  required
+                  style={{ direction: "rtl" }}
+                />
+              </Box>{" "}
+              <Box>
+                <Typography variant="h6" mb={2}>
+                  المشروع
+                </Typography>
+                <FormControl fullWidth>
+                  <InputLabel id="demo-simple-select-label">اختر مشروع</InputLabel>
+                  <Select
+                    labelId="demo-simple-select-label"
+                    id="demo-simple-select"
+                    value={age}
+                    label="اختر مشروع"
+                    style={{ direction: "rtl", height: "50px" }}
+                    onChange={handleChange}
+                  >
+                    <MenuItem value={0}>كفارة اليمين</MenuItem>
+                    <MenuItem value={1}>كفارة اليمين</MenuItem>
+                    <MenuItem value={2}>كفارة اليمين</MenuItem>
+                  </Select>
+                </FormControl>
+              </Box>{" "}
+              <Box>
+                <Typography variant="h6">Donate Type</Typography>
+                <TextField
+                  value={"زكاه"}
+                  variant="outlined"
+                  margin="normal"
+                  fullWidth
+                  required
+                  style={{ direction: "rtl" }}
+                />
+              </Box>{" "}
+              <Box>
+                <Typography variant="h6" mb={2}>
+                  سهم
+                </Typography>
+                <FormControl fullWidth>
+                  <InputLabel id="demo-simple-select-label">كفارة اليمين</InputLabel>
+                  <Select
+                    labelId="demo-simple-select-label"
+                    id="demo-simple-select"
+                    value={age}
+                    label="اختر مشروع"
+                    style={{ direction: "rtl", height: "50px" }}
+                    onChange={handleChange}
+                  >
+                    <MenuItem value={0}>ك</MenuItem>
+                    <MenuItem value={1}>كفارة اليمين</MenuItem>
+                    <MenuItem value={2}>كفارة اليمين</MenuItem>
+                  </Select>
+                </FormControl>
+              </Box>{" "}
+              <Box mt={2}>
+                <Button
+                  variant="contained"
+                  color="success"
+                  style={{ backgroundColor: "green", color: "white" }}
+                >
+                  حفظ
+                </Button>
+              </Box>
+            </form> */}
+ 
+490
+ 
+ {
+      id: 2,
+      name: "الاهرام",
+      img: "assets/bg-reset-cover.jpeg",
+    },
+    {
+      id: 3,
+      name: "الاهرام",
+      img: "assets/bg-reset-cover.jpeg",
+    },
+ 
+img
+ 
+FaRegEdit
+ 
+<div style={{ cursor: "pointer" }}>
+            <MdDelete size={30} />
+          </div>
+ 
+المحمول
+ 
+رقم
+ 
+الجريدة
+ 
+notifications
+ 
+ <FaUser size={50} />
+ 
+   <div>
+                  <h5>الاسم : Nahla</h5>
+                  <h5>البريد الالكتروني : nahla99@gmail.com</h5>
+                  <h5>رقم المحمول : 01002763638</h5>
+                  <TextField placeholder="ابحث عن معلومة شخصية"></TextField>
+                </div>
+ 
+  <MDTypography variant="h6" color="white" mx={2}>
+                  <FaUser size={50} />
+                </MDTypography>
+                <div>
+                  <h5>الاسم : Nahla</h5>
+                  <h5>البريد الالكتروني : nahla99@gmail.com</h5>
+                  <h5>رقم المحمول : 01002763638</h5>
+                  <TextField placeholder="ابحث عن معلومة شخصية"></TextField>
+                </div>
+ 
+<Navigate to="/تبرعات" />
+ 
+<div>mndob</div>
+ 
+<MyProfileTable />
+ 
+const Donations = () => <>Your Donations Component JSX here</>;
+const MobileDonations = () => <>Your MobileDonations Component JSX here</>;
+const Delegate = () => <>Your Delegate Component JSX here</>;
+const Tsleem = () => <>Your Tsleem Component JSX here</>;
+const ContactUs = () => <>Your ContactUs Component JSX here</>;
+const MonthlyInstallments = () => <>Your MonthlyInstallments Component JSX here</>;
+ 
+{
+    type: "collapse",
+    key: "donations",
+    route: "/dashboard",
+    component: <Tables />,
+  },
+ 
+dashboard
+ 
+              اعادة ارسال
+
+ 
+<FaUser size={26} />
+ 
+ندس حاتم
+ 
+اختر
+ 
+اختر
+ 
+اختر
+ 
+مشروع
+ 
+ع
+ 
+ddh
+ 
+دف التبرع :
+ 
+صدقة
+ 
+العملة
+ 
+border-bottom: 2px solid #fff !important;
+
+ 
+العملة
+ 
+EGP
+ 
+DKHDJH
+ 
+التبرع
+ 
+ rowD
+ 
+ابحث
+ 
+nahla99
+ 
+لبريد الالكتروني 
+ 
+fhfh
+ 
+, justifyContent: "space-between"
+ 
+<div>
+                  <TextField placeholder="ابحث"></TextField>
+                </div>
+                <Button style={{ fontSize: "1.5rem", color: "yellow" }} variant="">
+                  اضافة خبر
+                </Button>
+ 
+ <MDTypography variant="h6" color="white" mx={2}>
+                  اخبار
+                </MDTypography>
+                <div>
+                  <TextField placeholder="ابحث"></TextField>
+                </div>
+                <Button style={{ fontSize: "1.5rem", color: "yellow" }} variant="">
+                  اضافة خبر
+                </Button>
+ 
+Prof
+ 
+ {
+    type: "collapse",
+    name: "اخبار رئيسية",
+    key: "mainNews",
+    route: "/authentication/sign-up",
+  },
+ 
+authentication/sign-up
+ 
+Profilee
+ 
+Profilee
+ 
+ 
+  {
+    type: "collapse",
+    key: "بروفايل",
+    route: "",
+    component: <MyProfile />,
+  },
+ 
+/* eslint-disable react/prop-types */
+/* eslint-disable react/function-component-definition */
+/**
+=========================================================
+* Material Dashboard 2 React - v2.2.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard-react
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+// @mui material components
+import Icon from "@mui/material/Icon";
+
+// Material Dashboard 2 React components
+import MDBox from "components/MDBox";
+import MDTypography from "components/MDTypography";
+import MDAvatar from "components/MDAvatar";
+import MDProgress from "components/MDProgress";
+
+// Images
+import LogoAsana from "assets/images/small-logos/logo-asana.svg";
+import logoGithub from "assets/images/small-logos/github.svg";
+import logoAtlassian from "assets/images/small-logos/logo-atlassian.svg";
+import logoSlack from "assets/images/small-logos/logo-slack.svg";
+import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
+import logoInvesion from "assets/images/small-logos/logo-invision.svg";
+import {
+  Hidden,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TablePagination,
+  TableRow,
+ 
+تبرعات
+ 
+Profile
+ 
+<Navigate to="/تبرعات" />
+ 
+dashboard
+ 
+Profilee
+ 
+بروفايل
+ 
+ {
+    type: "collapse",
+    name: "اخبار رئيسية",
+    key: "mainNews",
+    route: "/authentication/sign-up",
+  },
+ 
+{ }
+ 
+/* eslint-disable react/prop-types */
+/* eslint-disable react/function-component-definition */
+/**
+=========================================================
+* Material Dashboard 2 React - v2.2.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard-react
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+// @mui material components
+import Icon from "@mui/material/Icon";
+
+// Material Dashboard 2 React components
+import MDBox from "components/MDBox";
+import MDTypography from "components/MDTypography";
+import MDAvatar from "components/MDAvatar";
+import MDProgress from "components/MDProgress";
+
+// Images
+import LogoAsana from "assets/images/small-logos/logo-asana.svg";
+import logoGithub from "assets/images/small-logos/github.svg";
+import logoAtlassian from "assets/images/small-logos/logo-atlassian.svg";
+import logoSlack from "assets/images/small-logos/logo-slack.svg";
+import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
+import logoInvesion from "assets/images/small-logos/logo-invision.svg";
+import {
+  Hidden,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TablePagination,
+  TableRow,
+} from "@mui/material";
+import React, { useEffect } from "react";
+import DataTable from "react-data-table-component";
+import { FaRegEdit, FaSearch, FaUser } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+// import DataTable from "react-data-table-component";
+ 
+  const handleRowClick = (row) => {
+    const clickedId = row.id;
+    // handleOpen();
+  };
+  const handleEdit = (row) => {
+    // Handle edit action
+    console.log("Edit clicked for row:", row);
+    setRowd(row);
+    handleOpenEdit();
+  };
+
+  const handleSearch = (row) => {
+    // Handle search action
+    console.log("Search clicked for row:", row);
+  };
+
+  const handleEmail = (row) => {
+    // Handle email action
+    handleOpenEmail();
+    console.log("Email clicked for row:", row);
+  };
+  const handleInfo = (row) => {
+    // Handle email action
+    console.log("Info clicked for row:", row);
+  };
+ 
+ {
+      name: "",
+      selector: (row) => row.email,
+      sortable: true,
+      cell: (row) => (
+        <CustomCellWithIcons
+          data={row}
+          onClickEdit={() => handleEdit(row)}
+          onClickSearch={() => handleSearch(row)}
+          onClickEmail={() => handleEmail(row)}
+          onClickInfo={() => handleInfo(row)}
+        />
+      ),
+      minWidth: "190px",
+    },
+ 
+handleOpenEdit, handleOpenEmail, setRowd, rowD 
+ 
+ const CustomCellWithIcons = ({ data, onClickEdit, onClickSearch, onClickEmail, onClickInfo }) => (
+    <div
+      style={{
+        whiteSpace: "pre-line",
+        display: "flex",
+        justifyContent: "space-around",
+      }}
+    >
+      <div onClick={() => onClickEdit(data)} style={{ backgroundColor: "green", padding: "5px" }}>
+        <FaRegEdit size={20} style={{ cursor: "pointer" }} />
+      </div>
+      <div
+        onClick={() => onClickSearch(data)}
+        style={{ backgroundColor: "#87CEFA ", padding: "5px" }}
+      >
+        <FaSearch size={20} style={{ cursor: "pointer" }} />
+      </div>
+      <div
+        onClick={() => onClickEmail(data)}
+        style={{ backgroundColor: "#90EE90 ", padding: "5px" }}
+      >
+        <MdEmail size={20} style={{ cursor: "pointer" }} />
+      </div>
+      <div onClick={() => onClickInfo(data)} style={{ backgroundColor: "gray", padding: "5px" }}>
+        <FaUser size={20} style={{ cursor: "pointer" }} />
+      </div>
+    </div>
+  );
+ 
+authentication/sign-up
+ 
+بار رئيسية
+ 
+   <FormControl fullWidth>
+        <InputLabel id="demo-simple-select-label">Age</InputLabel>
+        <Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          value={"age"}
+          label="Age"
+        >
+          <MenuItem value={10}>Ten</MenuItem>
+          <MenuItem value={20}>Twenty</MenuItem>
+          <MenuItem value={30}>Thirty</MenuItem>
+        </Select>
+      </FormControl>
+ 
+"@media (min-width: 250px)": {
+      width: "100%", // Adjust for smaller screens
+    },
+ 
+ <MDTypography component="h6" variant="button" fontWeight="medium" color={textColor}>
+              {/* {brandName} */}
+            </MDTypography>
+ 
+brandName="Material Dashboard 2"
+ 
+rgb(4, 97, 50)
+ 
+rgb(4, 97, 4) 
+ 
+ <Box>
+                <Typography variant="h6" gutterBottom>
+                  التفاصيل باللغة الانجليزية{" "}
+                </Typography>
+                <TextareaAutosize
+                  aria-label="Additional Comments"
+                  placeholder="التفاصيل"
+                  minRows={6}
+                  maxRows={7}
+                  style={{ width: "100%", marginTop: 8, direction: "rtl" }}
+                />
+              </Box>
+              <Box>
+                <Typography variant="h6">اختر صورة</Typography>
+                <input type="file" onChange={handleImageChange} />
+                {selectedImage && (
+                  <Box mt={2}>
+                    <img
+                      src={selectedImage}
+                      alt="Chosen"
+                      style={{ maxWidth: "100%", maxHeight: "200px" }}
+                    />
+                  </Box>
+                )}
+              </Box>
+ 
+عنوان
+ 
+القسم
+ 
+لعنوان باللغة الانجليزية
+ 
+القسم
+ 
+العنوان
+ 
+فارة اليمين
+ 
+المشروع
+ 
+كفارة
+ 
+>كفارة اليمين
+ 
+اليمين
+ 
+زكاه
+ 
+      <Box>
+              <Typography variant="h6">العنوان</Typography>
+              <TextField
+                label={rowD.email}
+                variant="outlined"
+                margin="normal"
+                fullWidth
+                required
+                style={{ direction: "rtl" }}
+              />
+            </Box>
+            <Box>
+              <Typography variant="h6">العنوان باللغة الانجليزية</Typography>
+              <TextField
+                label="عنوان القسم"
+                variant="outlined"
+                margin="normal"
+                fullWidth
+                style={{ direction: "rtl" }}
+                required
+              />
+            </Box>
+ 
+       <Box>
+              <Typography variant="h6" gutterBottom>
+                التفاصيل
+              </Typography>
+              <TextareaAutosize
+                aria-label="Message"
+                placeholder="تفاصيل القسم...."
+                minRows={6}
+                maxRows={6}
+                style={{ width: "100%", marginTop: 8, direction: "rtl" }}
+                required
+              />
+            </Box>
+            <Box>
+              <Typography variant="h6" gutterBottom>
+                التفاصيل باللغة الانجليزية{" "}
+              </Typography>
+              <TextareaAutosize
+                aria-label="Additional Comments"
+                placeholder="التفاصيل"
+                minRows={6}
+                maxRows={7}
+                style={{ width: "100%", marginTop: 8, direction: "rtl" }}
+              />
+            </Box>
+ 
+Age
+ 
+Quantity
+ 
+Ten
+ 
+"زكاة"
+ 
+"زكاة"
+ 
+"زكاة"
+ 
+...selectStyles
+ 
+  const selectStyles = {
+    '& .MuiSelect-select': {
+      height: '50px',
+    },
+    '& .MuiSelect-icon': {
+      top: 'calc(50% - 10px)', // Adjust the top position of the icon
+    },
+  };
+ 
+ label="Age"
+              onChange={handleChange}
+ 
+fullWidth
+ 
+20
+ 
+10
+ 
+rowD.email
+ 
+rowD.email
+ 
+العنوان
+ 
+العنوان
+ 
+hfg
+ 
+العنوان
+ 
+rowD.email
+ 
+rowD.email
+ 
+العنوان
+ 
+لبريد الاكتروني
+ 
+mohamedata@gmail
+ 
+"عنوان القسم"
+ 
+useEffect(()=>{
+
+})
+ 
+  handleOpenEdit();
+ 
+handleClose,
+ 
+  handleClose={handleClose}
+                  handleOpen={handleOpen}
+                  setOpen={setOpen}
+                  open={open}
+ 
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+ 
+c8b6ff
+ 
+a0c4ff
+ 
+ffcccb
+ 
+c8b6ff
+ 
+, borderRadius: "5px"
+ 
+, borderRadius: "5px"
+ 
+, borderRadius: "5px"
+ 
+, borderRadius: "5px"
+ 
+MdEmail
+ 
+size={20} style={{ cursor: "pointer" }} />
+ 
+MdEmail
+ 
+ريد الاكتروني
+ 
+ const handleRowClick = (row) => {
+    const clickedId = row.id;
+    handleOpen();
+  };
+ 
+donations
+ 
+ {
+      name: "الجريدة",
+      selector: (row) => row.jor,
+      cell: (row) => <CustomCell data={row.jor} />,
+    },
+ 
+التفاصيل
+ 
+العنوان
+ 
+سم الجر
+ 
+handleOpen={handleOpen}
+ 
+/* eslint-disable react/prop-types */
+/* eslint-disable react/function-component-definition */
+/**
+=========================================================
+* Material Dashboard 2 React - v2.2.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard-react
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+// @mui material components
+import Icon from "@mui/material/Icon";
+
+// Material Dashboard 2 React components
+import MDBox from "components/MDBox";
+import MDTypography from "components/MDTypography";
+import MDAvatar from "components/MDAvatar";
+import MDProgress from "components/MDProgress";
+
+// Images
+import LogoAsana from "assets/images/small-logos/logo-asana.svg";
+import logoGithub from "assets/images/small-logos/github.svg";
+import logoAtlassian from "assets/images/small-logos/logo-atlassian.svg";
+import logoSlack from "assets/images/small-logos/logo-slack.svg";
+import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
+import logoInvesion from "assets/images/small-logos/logo-invision.svg";
+import {
+  Hidden,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TablePagination,
+  TableRow,
+} from "@mui/material";
+ 
+// const columns = [
+  //   { name: "البريد الاكتروني", selector: "name", sortable: true },
+  //   { name: "البلد", selector: "age", sortable: true },
+  //   { name: "قيمة التبرع", selector: "city", sortable: true },
+  //   { name: "الراعي", selector: "city", sortable: true },
+  //   { name: "البنك", selector: "city", sortable: true },
+  //   { name: "نوع الكارت", selector: "city", sortable: true },
+  //   { name: "نوع العملي", selector: "city", sortable: true },
+  //   { name: "التحقق من نجاح العملية", selector: "city", sortable: true },
+  // ];
+
+  // const data = [
+  //   { name: "John Doe", age: 28, city: "New York" },
+  //   { name: "Jane Smith", age: 35, city: "San Francisco" },
+  //   { name: "Bob Johnson", age: 42, city: "Los Angeles" },
+  // ];
+ 
+/* eslint-disable react/prop-types */
+/* eslint-disable react/function-component-definition */
+/**
+=========================================================
+* Material Dashboard 2 React - v2.2.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard-react
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+// @mui material components
+import Icon from "@mui/material/Icon";
+
+// Material Dashboard 2 React components
+import MDBox from "components/MDBox";
+import MDTypography from "components/MDTypography";
+import MDAvatar from "components/MDAvatar";
+import MDProgress from "components/MDProgress";
+
+// Images
+import LogoAsana from "assets/images/small-logos/logo-asana.svg";
+import logoGithub from "assets/images/small-logos/github.svg";
+import logoAtlassian from "assets/images/small-logos/logo-atlassian.svg";
+import logoSlack from "assets/images/small-logos/logo-slack.svg";
+import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
+import logoInvesion from "assets/images/small-logos/logo-invision.svg";
+import {
+  Hidden,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TablePagination,
+  TableRow,
+ 
+   <Box>
+                <Typography variant="h6">العنوان باللغة الانجليزية</Typography>
+                <TextField
+                  label="عنوان القسم"
+                  variant="outlined"
+                  margin="normal"
+                  fullWidth
+                  style={{ direction: "rtl" }}
+                  required
+                />
+              </Box>
+ 
+صورة
+ 
+      <Box>
+                <Typography variant="h6" gutterBottom>
+                  التفاصيل
+                </Typography>
+                <TextareaAutosize
+                  aria-label="Message"
+                  placeholder="تفاصيل القسم...."
+                  minRows={6}
+                  maxRows={6}
+                  style={{ width: "100%", marginTop: 8, direction: "rtl" }}
+                  required
+                />
+              </Box>
+  
+              <Box>
+                <Typography variant="h6" gutterBottom>
+                  التفاصيل باللغة الانجليزية{" "}
+                </Typography>
+                <TextareaAutosize
+                  aria-label="Additional Comments"
+                  placeholder="التفاصيل"
+                  minRows={6}
+                  maxRows={7}
+                  style={{ width: "100%", marginTop: 8, direction: "rtl" }}
+                />
+              </Box>
+ 
+style={{ whiteSpace: "pre-line" }}
+ 
+style={{ whiteSpace: "pre-line"
+ 
+<img src="assets/bg-reset-cover.jpeg" />
+ 
+../../../
+ 
+./../../assets/images
+ 
+<Imagee data={row.img}
+ 
+<img src={row.img} alt="" />
+ 
+assets/images/
+ 
+""
+ 
+<CustomCell data={row.img} />
+ 
+address: "القضاء على الجوع والفقر",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+ 
+title
+ 
+العنوان
+ 
+  {
+      id: 2,
+      address: "الصحة الجيدة والرفاه",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+    {
+      id: 1,
+      address: "القضاء على الجوع والفقر",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+    {
+      id: 3,
+      address: "الصحة الجيدة والرفاه",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+    {
+      id: 4,
+      address: "القضاء على الجوع والفقر",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+    {
+      id: 5,
+      address: "الصحة الجيدة والرفاه",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+ 
+AddDeptModal
+ 
+<></>
+ 
+DepartementTable />
+ 
+
+import Icon from "@mui/material/Icon";
+
+// Material Dashboard 2 React components
+import MDBox from "components/MDBox";
+import MDTypography from "components/MDTypography";
+import MDAvatar from "components/MDAvatar";
+import MDProgress from "components/MDProgress";
+
+// Images
+import LogoAsana from "assets/images/small-logos/logo-asana.svg";
+import logoGithub from "assets/images/small-logos/github.svg";
+import logoAtlassian from "assets/images/small-logos/logo-atlassian.svg";
+import logoSlack from "assets/images/small-logos/logo-slack.svg";
+import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
+import logoInvesion from "assets/images/small-logos/logo-invision.svg";
+import {
+  Hidden,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TablePagination,
+  TableRow,
+} from "@mui/material";
+ 
+
+import Icon from "@mui/material/Icon";
+
+// Material Dashboard 2 React components
+import MDBox from "components/MDBox";
+import MDTypography from "components/MDTypography";
+import MDAvatar from "components/MDAvatar";
+import MDProgress from "components/MDProgress";
+
+// Images
+import LogoAsana from "assets/images/small-logos/logo-asana.svg";
+import logoGithub from "assets/images/small-logos/github.svg";
+import logoAtlassian from "assets/images/small-logos/logo-atlassian.svg";
+import logoSlack from "assets/images/small-logos/logo-slack.svg";
+import logoSpotify from "assets/images/small-logos/logo-spotify.svg";
+import logoInvesion from "assets/images/small-logos/logo-invision.svg";
+import {
+  Hidden,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TablePagination,
+  TableRow,
+ 
+/* eslint-disable react/prop-types */
+/* eslint-disable react/function-component-definition */
+/**
+=========================================================
+* Material Dashboard 2 React - v2.2.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard-react
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+// @mui material components
+ 
+authentication/sign-up
+ 
+storm
+ 
+  overflowY: "auto",
+    overflowX: "hidden", 
+ 
+      <Typography
+              id="modal-modal-title"
+              variant="h6"
+              component="h2"
+              style={{ textAlign: "right",border: "1px solid}}
+            >
+              اضافة قسم*
+            </Typography>
+ 
+  Text in a modal
+ 
+Any additional comments...
+ 
+                Additional Comments
+
+ 
+Success
+ 
+color: "white"
+ 
+color: "white" 
+ 
+hidden
+ 
+Type your message...
+ 
+Enter your email
+ 
+Enter your name
+ 
+Name
+ 
+gutterBottom
+ 
+gutterBottom
+ 
+onSubmit={handleSubmit}
+ 
+nSubmit={handleSubmit}
+ 
+    <div>
+                  <TextField placeholder="ابحث"></TextField>
+                </div>
+ 
+اخبار
+ 
+  <div>
+                  <TextField placeholder="ابحث"></TextField>
+                </div>
+                <Button style={{ fontSize: "1.5rem", color: "yellow" }} variant="">
+                  اضافة خبر
+                </Button>
+ 
+ {
+      id: 3,
+      address: "حملة ستر ودفا لاطعام الاسر الاولى بالرعاية بقري ونجوع",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+    {
+      id: 4,
+      address: "حملة ستر ودفا لاطعام الاسر الاولى بالرعاية بقري ونجوع",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+    {
+      id: 5,
+      address: "حملة ستر ودفا لاطعام الاسر الاولى بالرعاية بقري ونجوع",
+      jor: "اخبار اليوم",
+      hisadd: "1/11/2024",
+    },
+ 
+"حملة ستر ودفا لاطعام الاسر الاولى بالرعاية بقري ونجو
+ 
+ {
+      name: "الجريدة",
+      selector: (row) => row.jor,
+      cell: (row) => <CustomCell data={row.jor} />,
+    },
+    {
+      name: "تاريخ الاضافة",
+      selector: (row) => row.hisadd,
+      cell: (row) => <CustomCell data={row.hisadd} />,
+    },
+ 
+<SignIn />
+ 
+authentication/sign-in
+ 
+authentication/sign-up
+ 
+<Button onClick={handleOpen}>Open modal</Button>
+ 
+ console.log(`Clicked on row with ID: ${clickedId}`);
+    // Perform any other actions you need with the clicked ID
+ 
+handleRowClick={handleRowClick}
+ 
+   {
+      id: 13,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 14,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 15,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 16,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 17,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 18,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 19,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 21,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 22,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 23,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 24,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 25,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+ 
+اضافة
+ 
+input
+ 
+.rtl-1pvpzft
+ 
+1pvpzft
+ 
+color
+ 
+dashboard
+ 
+dashboard
+ 
+التبرعات
+ 
+authentication
+ 
+tables
+ 
+billing
+ 
+tables
+ 
+dashboard
+ 
+billing
+ 
+ارسال
+ 
+ارسال
+ 
+ينيني
+ 
+يتيتيت
+ 
+Tables
+ 
+Dashboard
+ 
+notifications
+ 
+profile
+ 
+<SignIn />,
+ 
+/authentication/sign-in
+ 
+bilg
+ 
+tles
+ 
+ط الشهرية
+ 
+ا
+ 
+طلبات تلسي
+ 
+موبايل
+ 
+<MonthlyInstallments />
+ 
+<ContactUs />
+ 
+<Tsleem />
+ 
+<Delegate />
+ 
+ <MobileDonations />
+ 
+<Donations />
+ 
+  {
+    type: "divider",
+    key: "tables",
+  },
+ 
+<Mob />
+ 
+<ContactUs />
+ 
+<></>
+ 
+<Mndob />
+ 
+<Tsleem />
+ 
+<CompletedInstallments />
+ 
+<Sections />
+ 
+<DonationTypes />
+ 
+<Activities />
+ 
+<InstallmentSystems />
+ 
+<MobileActivities />
+ 
+{
+    type: "collapse",
+    name: "Dashboard",
+    key: "dashboard",
+    icon: <Icon fontSize="small">dashboard</Icon>,
+    route: "/dashboard",
+    component: <Dashboard />,
+  },
+  {
+    type: "title",
+    name: "Tables",
+    key: "tables",
+    title: "ادارة المتبرعين",
+    icon: <Icon fontSize="small">dashboard</Icon>,
+    route: "/dashboard",
+  },
+  {
+    type: "collapse",
+    name: "تبرعات",
+    key: "donations",
+    route: "/تبرعات",
+    component: <Tables />,
+  },
+  {
+    type: "collapse",
+    name: "تبرعات الموبايل",
+    key: "mobileDonations",
+    route: "/rtl",
+    component: <div>mob</div>,
+  },
+  {
+    type: "collapse",
+    name: "ارسال مندوب",
+    key: "delegate",
+    route: "/notifications",
+    component: <div>mndob</div>,
+  },
+  {
+    type: "collapse",
+    name: "طلبات التسليم",
+    key: "delivery",
+    route: "/تسليم",
+    component: <div>tsleem</div>,
+  },
+ 
+{
+    type: "title",
+    name: "Tables",
+    key: "tables",
+    title: "ادارة المتبرعين",
+    component:<></>
+  },
+  {
+    type: "collapse",
+    name: "Donations",
+    key: "donations",
+    route: "/donations",
+    component: <Tables />,
+  },
+ 
+ {
+    type: "collapse",
+    name: "Delivery Requests",
+    key: "delivery",
+    route: "/delivery-requests",
+    component: <div>tsleem</div>,
+  },
+  {
+    type: "collapse",
+    name: "Contact Us",
+    key: "contactUs",
+    route: "/contact-us",
+    component: <div>تواصل</div>,
+  },
+  {
+    type: "collapse",
+    name: "Completed Installments",
+    key: "completedInstallments",
+    route: "/completed-installments",
+    component: <div>تواصل</div>,
+  },
+  {
+    type: "divider",
+    name: "Completed Installments",
+    key: "divider1",
+  },
+  {
+    type: "title",
+    name: "Sign In",
+    key: "signInTitle",
+    title: "ادارة المستخدمين",
+  },
+  {
+    type: "collapse",
+    name: "Users",
+    key: "users",
+    route: "/users",
+    component: <SignIn />,
+  },
+  {
+    type: "collapse",
+    name: "Branches",
+    key: "branches",
+    route: "/authentication/sign-up",
+  },
+  {
+    type: "collapse",
+    name: "Employees",
+    key: "employees",
+    route: "/authentication/sign-up",
+  },
+  {
+    type: "collapse",
+    name: "Departments",
+    key: "departments",
+    icon: <Icon fontSize="small">assignment</Icon>,
+    route: "/authentication/sign-up",
+  },
+  {
+    type: "divider",
+    name: "Completed Installments",
+    key: "divider2",
+  },
+  {
+    type: "title",
+    name: "Sign In",
+    key: "signIn2",
+    title: "ادارة الانشطة",
+  },
+  {
+    type: "collapse",
+    name: "Sections",
+    key: "sections",
+    route: "/authentication/sign-in",
+    component: <SignIn />,
+  },
+  {
+    type: "collapse",
+    name: "Donation Types",
+    key: "donationTypes",
+    route: "/authentication/sign-up",
+  },
+  {
+    type: "collapse",
+    name: "Activities",
+    key: "activities",
+    route: "/activities",
+    component: <Activities />,
+  },
+  {
+    type: "collapse",
+    name: "Installment Systems",
+    key: "installmentSystems",
+    route: "/installment-systems",
+    component: <T2seet />,
+  },
+  {
+    type: "collapse",
+    name: "Mobile Activities",
+    key: "mobileActivities",
+    route: "/authentication/sign-up",
+  },
+  {
+    type: "divider",
+    name: "Completed Installments",
+    key: "divider3",
+  },
+  {
+    type: "title",
+    name: "Sign In",
+    key: "signIn3",
+    title: "ادارة الاخبار",
+  },
+  {
+    type: "collapse",
+    name: "Online News",
+    key: "onlineNews",
+    route: "/online-news",
+    component: <News />,
+  },
+  {
+    type: "collapse",
+    name: "Orman News",
+    key: "ormanNews",
+    route: "/authentication/sign-up",
+  },
+  {
+    type: "collapse",
+    name: "Storm",
+    key: "storm",
+    route: "/authentication/sign-up",
+  },
+  {
+    type: "collapse",
+    name: "Main News",
+    key: "mainNews",
+    route: "/authentication/sign-up",
+  },
+ 
+authentication/sign-in
+ 
+sign-in
+ 
+sign-i
+ 
+sign-iw
+ 
+authentication/sign-in"
+ 
+sign
+ 
+authentication/sign-in
+ 
+billing
+ 
+billing
+ 
+الإجراءات
+ 
+his
+ 
+bld
+ 
+ email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+ 
+ const data = [
+  
+    {
+      id: 2,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 3,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 4,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 5,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 6,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 7,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 8,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 9,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 10,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 11,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 12,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 13,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 14,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 15,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 16,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 17,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 18,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 19,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 21,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 22,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 23,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 24,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 25,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    // Add more data entries with unique id values as needed
+  ];
+ 
+قيمة
+ 
+البريد
+ 
+{
+      name: "الراعي",
+      selector: (row) => row.rayy,
+      cell: (row) => <CustomCell data={row.rayy} />,
+    },
+    {
+      name: "البنك",
+      selector: (row) => row.bank,
+      cell: (row) => <CustomCell data={row.bank} />,
+    },
+ 
+{
+      name: "نوع الكرت",
+      selector: (row) => row.krt,
+      cell: (row) => <CustomCell data={row.krt} />,
+    },
+    {
+      name: "نوع العملية",
+      selector: (row) => row.no3,
+      cell: (row) => <CustomCell data={row.no3} />,
+    },
+    {
+      name: "التحقق من نجاح العملية",
+      selector: (row) => row.suc,
+      cell: (row) => <CustomCell data={row.suc} />,
+    },
+ 
+                  انظمة التقسيط
+
+ 
+    <T2seetTable/>
+ 
+<SignIn />
+ 
+authentication/sign-in
+ 
+انظمة
+ 
+انظمة
+ 
+uthentication/sign-up
+ 
+الانشطة
+ 
+name: 'العنوان',
+ 
+selector: 'email',
+ 
+حذف
+ 
+تعديل
+ 
+  cell: (row) => (
+        <div>
+          <button>
+            <FaRegEdit/>
+          </button>
+          <button>
+            <MdDelete /> حذف
+          </button>
+        </div>
+      ),
+ 
+FaTrash
+ 
+ onClick={() => handleDelete(row)}
+ 
+تعديل
+ 
+ onClick={() => handleUpdate(row)}
+ 
+ستشفى الاورمان لسرطان الكبار بالصعيد
+ 
+address
+ 
+mohamedata@gmail.com
+ 
+ bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+ 
+const data = [
+  
+    {
+      id: 2,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 3,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 4,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 5,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 6,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 7,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 8,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 9,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 10,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 11,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 12,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 13,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 14,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 15,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 16,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 17,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 18,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 19,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 21,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    {
+      id: 22,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },{
+      id: 23,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },{
+      id: 24,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },{
+      id: 25,
+      email: "mohamedata@gmail.com",
+      bld: "Egypt",
+      tbro: "100",
+      rayy: "Company XYZ",
+      bank: "Paymob",
+      krt: "mobile wallet",
+      no3: "ONe time",
+      suc: "Transaction",
+    },
+    // Add more data entries with unique id values as needed
+  ];
+ 
+  {
+      name: "قيمة التبرع",
+      selector: (row) => row.tbro,
+    },
+    {
+      name: "الراعي",
+      selector: (row) => row.rayy,
+    },
+    {
+      name: "البنك",
+      selector: (row) => row.bank,
+    },
+    {
+      name: "نوع الكرت",
+      selector: (row) => row.krt,
+    },
+    {
+      name: "نوع العملية",
+      selector: (row) => row.no3,
+    },
+    {
+      name: "التحقق من نجاح العملية",
+      selector: (row) => row.suc,
+    },
+ 
+/authentication/sign-up
+ 
+Mytable1data
+ 
+ <Grid item xs={12}>
+          <Card>
+            <MDBox
+              mx={2}
+              mt={-3}
+              py={3}
+              px={2}
+              variant="gradient"
+              bgColor="info"
+              borderRadius="lg"
+              coloredShadow="info"
+            >
+              <MDTypography variant="h6" color="white">
+                Projects Table
+              </MDTypography>
+            </MDBox>
+            <MDBox pt={3}></MDBox>
+          </Card>
+        </Grid>
+ 
+    Authors Table
+ 
+billing
+ 
+bill
+ 
+billing
+ 
+bld
+ 
+قيمة
+ 
+ohn Doe
+ 
+1988
+ 
+Beetlejuice
+ 
+   {
+      id: 1,
+      name: "Beetlejuice",
+      year: "1988",
+    },
+ 
+   {
+      id: 2,
+      name: "Ghostbusters",
+      year: "1984",
+    },
+    {
+      id: 2,
+      name: "Ghostbusters",
+      year: "1984",
+    },
+    {
+      id: 2,
+      name: "Ghostbusters",
+      year: "1984",
+    },
+ 
+البلد
+ 
+bld
+ 
+bld
+ 
+   {
+      id: 2,
+      title: "Ghostbusters",
+      year: "1984",
+    },
+    {
+      id: 2,
+      title: "Ghostbusters",
+      year: "1984",
+    },
+    {
+      id: 2,
+      title: "Ghostbusters",
+      year: "1984",
+    },
+    {
+      id: 2,
+      title: "Ghostbusters",
+      year: "1984",
+    },
+    {
+      id: 2,
+      title: "Ghostbusters",
+      year: "1984",
+    },
+    {
+      id: 2,
+      title: "Ghostbusters",
+      year: "1984",
+    },
+    {
+      id: 2,
+      title: "Ghostbusters",
+      year: "1984",
+    },
+    {
+      id: 2,
+      title: "Ghostbusters",
+      year: "1984",
+    },
+    {
+      id: 2,
+      title: "Ghostbusters",
+      year: "1984",
+    },
+ 
+ <>
+        {/* <DataTable
+          columns={columns}
+          data={data}
+          // Customize other DataTable props as needed
+          pagination
+          responsive
+          // ... other props
+        /> */}
+ 
+const columns = [
+    {
+      name: "Title",
+      selector: (row) => row.title,
+    },
+    {
+      name: "Year",
+      selector: (row) => row.year,
+    },
+  ];
+
+  const data = [
+    {
+      id: 1,
+      title: "Beetlejuice",
+      year: "1988",
+    },
+    {
+      id: 2,
+      title: "Ghostbusters",
+      year: "1984",
+    },
+  ];
+ 
+   <TableContainer component={Paper}>
+        <Table>
+          <TableHead>
+            <TableRow>
+              {columns.map((column) => (
+                <Hidden key={column.id} xs={column.xs} md={column.md}>
+                  <TableCell align={column.align}>{column.label}</TableCell>
+                </Hidden>
+              ))}
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {rows.map((row, rowIndex) => (
+              <TableRow key={rowIndex}>
+                {columns.map((column) => (
+                  <Hidden key={column.id} xs={column.xs} md={column.md}>
+                    <TableCell align={column.align}>{row[column.id]}</TableCell>
+                  </Hidden>
+                ))}
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+ 
+  const [page, setPage] = React.useState(0);
+  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+
+  const handleChangePage = (event, newPage) => {
+    setPage(newPage);
+  };
+
+  const handleChangeRowsPerPage = (event) => {
+    setRowsPerPage(+event.target.value);
+    setPage(0);
+  };
+ 
+   <TablePagination
+        rowsPerPageOptions={[10, 25, 100]}
+        component="div"
+        count={rows.length}
+        rowsPerPage={rowsPerPage}
+        page={page}
+        onPageChange={handleChangePage}
+        onRowsPerPageChange={handleChangeRowsPerPage}
+      />
+ 
+color
+ 
+ {
+    type: "collapse",
+    name: "Dashboard",
+    key: "dashboard",
+    // icon: <Icon fontSize="small">dashboard</Icon>,
+    route: "/dashboard",
+    component: <Dashboard />,
+  },
+  {
+    type: "collapse",
+    name: "Tables",
+    key: "tables",
+    // icon: <Icon fontSize="small">table_view</Icon>,
+    route: "/tables",
+    component: <Tables />,
+  },
+ 
+انظمة
+ 
+انواع
+ 
+ <MDBox py={3}>
+        <Grid container spacing={3}>
+          <Grid item xs={12} md={6} lg={3}>
+            <MDBox mb={1.5}>
+              <ComplexStatisticsCard
+                color="dark"
+                icon="weekend"
+                title="Bookings"
+                count={281}
+                percentage={{
+                  color: "success",
+                  amount: "+55%",
+                  label: "than lask week",
+                }}
+              />
+            </MDBox>
+          </Grid>
+          <Grid item xs={12} md={6} lg={3}>
+            <MDBox mb={1.5}>
+              <ComplexStatisticsCard
+                icon="leaderboard"
+                title="Today's Users"
+                count="2,300"
+                percentage={{
+                  color: "success",
+                  amount: "+3%",
+                  label: "than last month",
+                }}
+              />
+            </MDBox>
+          </Grid>
+          <Grid item xs={12} md={6} lg={3}>
+            <MDBox mb={1.5}>
+              <ComplexStatisticsCard
+                color="success"
+                icon="store"
+                title="Revenue"
+                count="34k"
+                percentage={{
+                  color: "success",
+                  amount: "+1%",
+                  label: "than yesterday",
+                }}
+              />
+            </MDBox>
+          </Grid>
+          <Grid item xs={12} md={6} lg={3}>
+            <MDBox mb={1.5}>
+              <ComplexStatisticsCard
+                color="primary"
+                icon="person_add"
+                title="Followers"
+                count="+91"
+                percentage={{
+                  color: "success",
+                  amount: "",
+                  label: "Just updated",
+                }}
+              />
+            </MDBox>
+          </Grid>
+        </Grid>
+        <MDBox mt={4.5}>
+          <Grid container spacing={3}>
+            <Grid item xs={12} md={6} lg={4}>
+              <MDBox mb={3}>
+                <ReportsBarChart
+                  color="info"
+                  title="website views"
+                  description="Last Campaign Performance"
+                  date="campaign sent 2 days ago"
+                  chart={reportsBarChartData}
+                />
+              </MDBox>
+            </Grid>
+            <Grid item xs={12} md={6} lg={4}>
+              <MDBox mb={3}>
+                <ReportsLineChart
+                  color="success"
+                  title="daily sales"
+                  description={
+                    <>
+                      (<strong>+15%</strong>) increase in today sales.
+                    </>
+                  }
+                  date="updated 4 min ago"
+                  chart={sales}
+                />
+              </MDBox>
+            </Grid>
+            <Grid item xs={12} md={6} lg={4}>
+              <MDBox mb={3}>
+                <ReportsLineChart
+                  color="dark"
+                  title="completed tasks"
+                  description="Last Campaign Performance"
+                  date="just updated"
+                  chart={tasks}
+                />
+              </MDBox>
+            </Grid>
+          </Grid>
+        </MDBox>
+        <MDBox>
+          <Grid container spacing={3}>
+            <Grid item xs={12} md={6} lg={8}>
+              <Projects />
+            </Grid>
+            <Grid item xs={12} md={6} lg={4}>
+              <OrdersOverview />
+            </Grid>
+          </Grid>
+        </MDBox>
+      </MDBox>
+ 
+الفروع
+ 
+Sign In
+ 
+   icon: <Icon fontSize="small">login</Icon>,
+    route: "/authentication/sign-in",
+    component: <SignIn />,
+ 
+icon: <Icon fontSize="small">login</Icon>,
+    route: "/authentication/sign-in",
+    component: <div>تواصل</div>,
+ 
+معنا
+ 
+ icon: <Icon fontSize="small">table_view</Icon>,
+    route: "/tables",
+    component: <Tables />,
+ 
+ icon: <Icon fontSize="small">receipt_long</Icon>,
+    route: "/billing",
+    component: <Billing />,
+ 
+textColor
+ 
+collapse
+ 
+absolute isMini
+ 
+     <Grid container spacing={3}>
+            <Grid item xs={12} md={7}>
+              <BillingInformation />
+            </Grid>
+            <Grid item xs={12} md={5}>
+              <Transactions />
+            </Grid>
+          </Grid>
+ 
+     <Grid container spacing={3}>
+            <Grid item xs={12} lg={8}>
+              <Grid container spacing={3}>
+                <Grid item xs={12} xl={6}>
+                  <MasterCard number={4562112245947852} holder="jack peterson" expires="11/22" />
+                </Grid>
+                <Grid item xs={12} md={6} xl={3}>
+                  <DefaultInfoCard
+                    icon="account_balance"
+                    title="salary"
+                    description="Belong Interactive"
+                    value="+$2000"
+                  />
+                </Grid>
+                <Grid item xs={12} md={6} xl={3}>
+                  <DefaultInfoCard
+                    icon="paypal"
+                    title="paypal"
+                    description="Freelance Payment"
+                    value="$455.00"
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <PaymentMethod />
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item xs={12} lg={4}>
+              <Invoices />
+            </Grid>
+          </Grid>
+ 
